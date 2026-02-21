@@ -19,9 +19,9 @@ const router = createBrowserRouter([
             { path: "", element: <Home /> },
             { path: "/fuglinod", element: <FuglINod /> },
             { path: "/fugleforing", element: <FugleForing /> },
-            { path: "omoss", element: <OmOss /> },
-            { path: "stottoss", element: <StottOss /> },
-            { path: "blifrivillig", element: <BliFrivillig /> },
+            { path: "/omoss", element: <OmOss /> },
+            { path: "/stottoss", element: <StottOss /> },
+            { path: "/blifrivillig", element: <BliFrivillig /> },
         ],
     },
 ]);
