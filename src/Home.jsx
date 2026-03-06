@@ -202,14 +202,11 @@ function Home() {
                                 target="_blank"
                                 className="nodeco blacktext"
                             >
-                                <p
-                                    id="support-highlight"
-                                    className="stott-inline"
-                                >
+                                <p id="support-member" className="stott-inline">
                                     Grasrotmottaker:{" "}
                                 </p>
-                                Fuglehjelpen,
                             </a>
+                            Fuglehjelpen,
                             <br />
                             organisasjonsnummer: 983235735
                             <br />

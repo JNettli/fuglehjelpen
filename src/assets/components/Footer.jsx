@@ -41,7 +41,13 @@ function Footer() {
                 <div>
                     <div className="credits">
                         <p>
-                            &copy; 2025 Fuglehjelpen | Design av Vilde Rognlien
+                            &copy; 2025 Fuglehjelpen | Design av{" "}
+                            <a
+                                href="https://vilderognlien.netlify.app/"
+                                target="_blank"
+                            >
+                                Vilde Rognlien
+                            </a>
                         </p>
                     </div>
                 </div>

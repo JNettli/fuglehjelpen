@@ -462,9 +462,11 @@ footer a:hover {
     padding: 32px 48px;
 }
 
-.credits p {
+.credits p,
+.credits a {
     font-family: AvenirNextUltLit;
     font-size: 20px;
+    color: #f5f1d7a1;
 }
 
 .Layout {
