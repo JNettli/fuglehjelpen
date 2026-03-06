@@ -1,50 +1,271 @@
 function Home() {
     return (
         <>
-            <p>Hello!</p>
-            <p>Hello!</p>
-            <p>Hello!</p>
-            <p>Hello!</p>
-            <p>Hello!</p>
-            <p>Hello!</p>
-            <p>Hello!</p>
-            <p>Hello!</p>
-            <p>Hello!</p>
-            <p>Hello!</p>
-            <p>Hello!</p>
-            <p>Hello!</p>
-            <p>Hello!</p>
-            <p>Hello!</p>
-            <p>Hello!</p>
-            <p>Hello!</p>
-            <p>Hello!</p>
-            <p>Hello!</p>
-            <p>Hello!</p>
-            <p>Hello!</p>
-            <p>Hello!</p>
-            <p>Hello!</p>
-            <p>Hello!</p>
-            <p>Hello!</p>
-            <p>Hello!</p>
-            <p>Hello!</p>
-            <p>Hello!</p>
-            <p>Hello!</p>
-            <p>Hello!</p>
-            <p>Hello!</p>
-            <p>Hello!</p>
-            <p>Hello!</p>
-            <p>Hello!</p>
-            <p>Hello!</p>
-            <p>Hello!</p>
-            <p>Hello!</p>
-            <p>Hello!</p>
-            <p>Hello!</p>
-            <p>Hello!</p>
-            <p>Hello!</p>
-            <p>Hello!</p>
-            <p>Hello!</p>
-            <p>Hello!</p>
-            <p>Hello!</p>
+            <div className="hero-banner-main">
+                <div className="hero-banner-image"></div>
+                <div className="hero-circle">
+                    <div className="hero-inner-circle">
+                        <div className="hero-text">
+                            <p className="hero-h1">
+                                DIN HJELP
+                                <br />
+                                SETTER SPOR
+                            </p>
+                            <p className="hero-p">
+                                Fuglebestanden synker, og med 40% <br />
+                                av norges fugler allerede på rødlisten, teller{" "}
+                                <br />
+                                hver fugl vi får reddet. Bli med å gjøre en
+                                forskjell!
+                            </p>
+                            <a href="/stottoss">
+                                <button>Bli fuglehjelpgiver i dag!</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className="white-div">
+                <div className="main-div-box">
+                    <div className="imgplaceholder"></div>
+                    <div className="main-div-textbox">
+                        <h1>HVEM ER FUGLEHJELPEN?</h1>
+                        <p>
+                            Fuglehjelpen er en idealistisk organisasjon med
+                            fokus på vern og rehabilitering av fugl.
+                            Kompetanseområdene strekker seg fra praktisk
+                            rådgivning på telefon, henting av skadet fugl,
+                            levering til veterinær, rehabilitering, ringmerking,
+                            drift av duetårn og behandling katastroferammet
+                            fugl.
+                            <br />
+                            <br />
+                            Alt arbeid skjer på frivillig basis. Vi har
+                            tilholdsted og mottak for skadet fugl i Moss, men
+                            har frivillige på flere lokasjoner så ring oss
+                            gjerne uansett hvor du er. Fuglehjelpen er en av
+                            landets eldste hjelpeorganisasjoner for fugl.
+                        </p>
+                        <div className="right-side">
+                            <a href="/omoss">
+                                <button>Les mer om oss</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className="offwhite-div">
+                <div className="main-div-box">
+                    <div className="centered">
+                        <h1>FUGL I NØD</h1>
+                        <p className="greentext">
+                            Har du funnet en fugl i nød og er usikker på hva du
+                            gjør nå? <br />
+                            Ring oss på{" "}
+                            <a href="tel:+4790086161" className="greentext">
+                                900 86 161
+                            </a>{" "}
+                            eller{" "}
+                            <a href="tel:+4791165789" className="greentext">
+                                911 65 789
+                            </a>{" "}
+                            og send oss gjerne et bilde av fuglen. <br />
+                            <br />
+                        </p>
+                        <p className="greentext">
+                            Får du ikke tak i oss?
+                            <br />
+                            Noen ganger kan vi ikke ta telefonen. Da er det
+                            greit å vite hva du selv kan gjøre.
+                        </p>
+                        <a href="/fuglinod">
+                            <button>Les mer her</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div className="white-div">
+                <div className="main-div-box">
+                    <div className="main-div-textbox">
+                        <h1>FUGLEFÔRING</h1>
+                        <p>
+                            Visste du at du kan gjøre fuglene sterkere og bedre
+                            rustet for livets utfordringer bare ved å mate dem?
+                            Fuglehjelpen anbefaler fôring av fugler hele året
+                            rundt så de er klare for lange trekk eller
+                            overvintring. Når en trekkfugl kommer tilbake til
+                            nordlige trakter i mai, kan den være så sulten og
+                            utmattet at en "dårlig vår" kan ta knekken på den.
+                            Da vil et fuglebrett med frø være redningen.
+                        </p>
+                        <a href="/fugleforing">
+                            <button>Les mer her</button>
+                        </a>
+                    </div>
+                    <div className="imgplaceholder"></div>
+                </div>
+            </div>
+            <div className="offwhite-div">
+                <div className="main-div-box">
+                    <div>
+                        <div className="centered">
+                            <h1>REHABILITERTE FUGLER</h1>
+                            <p>
+                                Følg oss på Facebook for å se mer av vårt arbeid
+                                for ville fugler i Norge.
+                            </p>
+                        </div>
+                        <div className="rehab-fugler">
+                            <div className="rehab-fugler-box">
+                                <div className="rehab-fugler-img"></div>
+                                <div className="rehab-fugler-text">
+                                    <h2 className="p-demi">
+                                        Nødhjelp for Havsule
+                                    </h2>
+                                    <p>
+                                        Denne havsulen fant vi med tråd hardt
+                                        rundt nebbet, som aldri ville løsnet på
+                                        egenhånd.
+                                    </p>
+                                </div>
+                            </div>
+                            <div className="rehab-fugler-box">
+                                <div className="rehab-fugler-img"></div>
+                                <div className="rehab-fugler-text">
+                                    <h2 className="p-demi">
+                                        Perleugle med hjernerystelse
+                                    </h2>
+                                    <p>
+                                        Etter noen dagers rehab på mottaket
+                                        spiser og flyr den nå helt selv.
+                                    </p>
+                                </div>
+                            </div>
+                            <div className="rehab-fugler-box">
+                                <div className="rehab-fugler-img"></div>
+                                <div className="rehab-fugler-text">
+                                    <h2 className="p-demi">
+                                        Spurvehauk på rehab
+                                    </h2>
+                                    <p>
+                                        Etter en kollisjon trengte den noen
+                                        dagers hvile på mottaket. Nå er den klar
+                                        for det fri igjen!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className="white-div">
+                <div className="main-div-box">
+                    <div className="main-div-textbox">
+                        <h1>BLI FRIVILLIG</h1>
+                        <p className="greentext bigger-text">
+                            Ønsker du å bli en Fuglehjelper? Alt arbeid hos
+                            Fuglehjelpen gjøres av frivillige, og alle bidrag
+                            hjelper! Vi trenger hjelp med alt fra
+                            rehabilitering, til kjørehjelp, til mer
+                            administrative oppgaver m. m.
+                        </p>
+                        <a href="/blifrivillig">
+                            <button>Les mer her</button>
+                        </a>
+                    </div>
+                    <div className="imgplaceholder"></div>
+                </div>
+            </div>
+            <div className="offwhite-div">
+                <div className="main-div-box">
+                    <div className="centered">
+                        <h1>STØTT OSS</h1>
+                        <p>
+                            Fuglehjelpen er avhengige av din hjelp og støtte for
+                            å kunne fortsette å hjelpe norske villfugler. Ønsker
+                            du å støtte <br /> Fuglehjelpen økonomisk, kan du
+                            sende et valgfritt beløp til
+                        </p>
+                        <br />
+                        <br />
+                        <p>
+                            <p id="support-highlight" className="stott-inline">
+                                Kontonummer:{" "}
+                            </p>
+                            15030726852,{" "}
+                            <p id="support-highlight" className="stott-inline">
+                                Vipps:{" "}
+                            </p>
+                            834729,{" "}
+                            <a
+                                href="https://www.norsk-tipping.no/grasrotandelen/din-mottaker/983235735"
+                                target="_blank"
+                                className="nodeco blacktext"
+                            >
+                                <p
+                                    id="support-highlight"
+                                    className="stott-inline"
+                                >
+                                    Grasrotmottaker:{" "}
+                                </p>
+                                Fuglehjelpen,
+                            </a>
+                            <br />
+                            organisasjonsnummer: 983235735
+                            <br />
+                            <br />
+                            <p className="stott-inline">
+                                Eller gi et fast beløp som{" "}
+                            </p>
+                            <a href="/stottoss" id="support-member">
+                                medlem
+                            </a>
+                            <br />
+                            <br />
+                        </p>
+                        <p id="stott-bold">
+                            Alle bidrag går kun til hjelp av fugl
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div className="white-div">
+                <div className="main-div-box">
+                    <div>
+                        <h1>ANDRE HJELPEORGANISASJONER</h1>
+                        <ul>
+                            <li>
+                                <a
+                                    href="https://svanehjelpen.no/"
+                                    target="_blank"
+                                >
+                                    Svanehjelpen
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    href="https://www.fugleadvokatene.no/"
+                                    target="_blank"
+                                >
+                                    Fugleadvokatene
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    href="https://www.duepatruljen.com/"
+                                    target="_blank"
+                                >
+                                    Duepatruljen
+                                </a>
+                            </li>
+                            <li>
+                                Byfuglhjelpen Trondheim:{" "}
+                                <a href="tel:+4746468600">46468600</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </>
     );
 }
