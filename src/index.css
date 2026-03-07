@@ -34,6 +34,14 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
+[id] {
+    scroll-margin-top: 128px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     display: flex;
@@ -396,6 +404,100 @@ li a {
 
 li a:hover {
     color: var(--button);
+}
+
+.quicknavbox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1320px;
+    margin: 16px 0;
+}
+
+.quicknavbox p {
+    color: var(--primary-green);
+    font-family: AvenirNextDemiBold;
+    margin-bottom: 16px;
+}
+
+.quicknavbox a {
+    color: var(--primary-green);
+    font-family: AvenirNext;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.quicknav {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.sidebyside {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sub-div-box {
+    padding: 60px;
+    max-width: 1320px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sub-div-text {
+    width: 57%;
+}
+
+.helplist {
+    list-style-type: decimal;
+}
+
+.helplist li {
+    margin: 32px 0;
+    color: var(--primary-green);
+    font-family: AvenirNextDemiBold;
+}
+
+.helplist li p {
+    font-family: AvenirNext;
+    display: inline;
+    color: var(--primary-font);
+}
+
+.helplist li p a {
+    text-decoration: underline;
+}
+
+.infobox-container {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 48px;
+}
+
+.infobox {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    background-color: var(--background-white);
+    border-radius: 20px;
+    align-items: center;
+}
+
+.infobox h2 {
+    padding-top: 20px;
+}
+
+.infobox p {
+    padding: 16px 24px 24px 32px;
+}
+
+.underline {
+    border: 1px solid var(--primary-green);
+    width: 60%;
 }
 
 footer {
