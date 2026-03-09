@@ -254,6 +254,12 @@ button:hover {
     justify-content: center;
 }
 
+.green-div {
+    background-color: var(--primary-green);
+    display: flex;
+    justify-content: center;
+}
+
 .main-div-box {
     display: flex;
     align-items: center;
@@ -420,11 +426,16 @@ li a:hover {
     margin-bottom: 16px;
 }
 
-.quicknavbox a {
+.quicknav a {
     color: var(--primary-green);
     font-family: AvenirNext;
     font-size: 24px;
     text-decoration: none;
+    transition: color 0.2s;
+}
+
+.quicknav a.active {
+    color: var(--button);
 }
 
 .quicknav {
@@ -450,6 +461,57 @@ li a:hover {
 
 .sub-div-text {
     width: 57%;
+}
+
+.spacer {
+    padding: 80px 0;
+}
+
+table {
+    width: 1320px;
+    border-collapse: separate;
+    border-spacing: 0;
+    font-size: 20px;
+    table-layout: fixed;
+}
+
+td {
+    height: 60px;
+    border: 1px solid var(--primary-green);
+    background-color: transparent;
+    font-family: AvenirNext;
+}
+
+tr:first-child td {
+    font-family: AvenirNextDemiBold;
+    background-color: var(--primary-green);
+    color: var(--primary-white);
+}
+
+td:first-child {
+    font-family: AvenirNextDemiBold;
+    background-color: var(--primary-white);
+    color: var(--primary-green);
+}
+
+tr:first-child td + td {
+    border-left: 1px solid var(--primary-white);
+}
+
+tr:first-child td:first-child {
+    border-top-left-radius: 10px;
+}
+
+tr:first-child td:last-child {
+    border-top-right-radius: 10px;
+}
+
+tr:last-child td:first-child {
+    border-bottom-left-radius: 10px;
+}
+
+tr:last-child td:last-child {
+    border-bottom-right-radius: 10px;
 }
 
 .helplist {
@@ -498,6 +560,29 @@ li a:hover {
 .underline {
     border: 1px solid var(--primary-green);
     width: 60%;
+}
+
+.form-div {
+    width: 100%;
+    font-family: AvenirNext;
+    font-size: 20px;
+}
+
+.form-div-inner {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 8px 0;
+}
+
+.form-div-inner input {
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--primary-white);
+    font-family: AvenirNext;
+    font-size: 20px;
+    padding: 16px;
 }
 
 footer {

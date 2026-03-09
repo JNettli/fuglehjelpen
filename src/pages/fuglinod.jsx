@@ -1,4 +1,43 @@
+import { useEffect, useState } from "react";
+
 function FuglINod() {
+    const [active, setActive] = useState("");
+
+    const ids = [
+        "ikkesvar",
+        "halting",
+        "vingeproblemer",
+        "kollisjon",
+        "frakt",
+        "matogvann",
+        "kattebitt",
+        "lomvi",
+        "fugleunger",
+    ];
+
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        setActive(entry.target.id);
+                    }
+                });
+            },
+            {
+                rootMargin: "-140px 0px -60% 0px",
+                threshold: 0.2,
+            },
+        );
+
+        ids.forEach((id) => {
+            const el = document.getElementById(id);
+            if (el) observer.observe(el);
+        });
+
+        return () => observer.disconnect();
+    }, []);
+
     return (
         <>
             <div className="hero-banner-main">
@@ -44,13 +83,16 @@ function FuglINod() {
                         <div className="sub-div-text">
                             <div>
                                 <h1>HVA KAN DU SELV GJØRE?</h1>
-                                <p id="ikkesvar">
-                                    Noen ganger kan vi ikke ta telefonen eller
-                                    så har vi ikke kapasitet. Telefonen bemannes
-                                    av frivillige, med jobb og forpliktelser
-                                    akkurat som deg. Da er det greit å vite hva
-                                    du selv kan gjøre:
-                                </p>
+                                <section id="ikkesvar">
+                                    <p>
+                                        Noen ganger kan vi ikke ta telefonen
+                                        eller så har vi ikke kapasitet.
+                                        Telefonen bemannes av frivillige, med
+                                        jobb og forpliktelser akkurat som deg.
+                                        Da er det greit å vite hva du selv kan
+                                        gjøre:
+                                    </p>
+                                </section>
                                 <ol className="helplist">
                                     <li>
                                         Alle har plikt til å hjelpe et dyr i
