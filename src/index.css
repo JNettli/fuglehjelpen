@@ -563,7 +563,7 @@ tr:last-child td:last-child {
 }
 
 .form-div {
-    width: 100%;
+    max-width: 780px;
     font-family: AvenirNext;
     font-size: 20px;
 }
@@ -572,10 +572,14 @@ tr:last-child td:last-child {
     display: flex;
     justify-content: space-between;
     gap: 16px;
-    padding: 8px 0;
+    padding: 8px 0 16px 0;
 }
 
-.form-div-inner input {
+.form-div-inner div {
+    width: 44.75%;
+}
+
+input {
     width: 100%;
     border: none;
     border-radius: 8px;
@@ -583,6 +587,135 @@ tr:last-child td:last-child {
     font-family: AvenirNext;
     font-size: 20px;
     padding: 16px;
+}
+
+.form-div-inner-alt {
+    display: flex;
+    gap: 16px;
+}
+
+.form-div-inner-alt label {
+    width: 50%;
+}
+
+.form-radio {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px;
+    cursor: pointer;
+    position: relative;
+}
+
+.form-radio input {
+    position: absolute;
+    opacity: 0;
+}
+
+.checkmark {
+    height: 25px;
+    width: 25px;
+    background-color: var(--primary-white);
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+.form-radio:hover .checkmark {
+    background-color: var(--button);
+}
+
+.form-radio input:checked ~ .checkmark {
+    background-color: var(--primary-green);
+}
+
+.checkmark::after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.form-radio input:checked ~ .checkmark::after {
+    display: block;
+}
+
+.checkmark::after {
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    background: var(--primary-white);
+    position: relative;
+    top: 7px;
+    left: 7px;
+}
+
+textarea {
+    border: none;
+    padding: 16px;
+    font-family: AvenirNext;
+    font-size: 20px;
+    width: 748px;
+    height: 285px;
+    background-color: var(--primary-white);
+    border-radius: 8px;
+    resize: vertical;
+}
+
+.memberlabel {
+    font-size: 20px;
+    font-family: AvenirNext;
+}
+
+.memberinput {
+    background-color: var(--background-white);
+    margin: 8px 0 24px 0;
+    max-width: 75%;
+}
+
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: #f5f1d799;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.modal-overlay.show {
+    opacity: 1;
+}
+
+.modal-overlay.hide {
+    opacity: 0;
+}
+
+.modal {
+    background: white;
+    border-radius: 20px;
+    padding: 40px;
+    position: relative;
+    max-width: 500px;
+    width: 90%;
+
+    transform: scale(0.95);
+    transition: transform 0.3s ease;
+}
+
+.modal-overlay.show .modal {
+    transform: scale(1);
+}
+
+.modal-close {
+    position: absolute;
+    top: 12px;
+    right: 16px;
+    border: none;
+    background: none;
+    font-size: 22px;
+    cursor: pointer;
 }
 
 footer {
