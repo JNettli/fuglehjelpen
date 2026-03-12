@@ -1,8 +1,7 @@
 function FugleForing() {
     return (
         <>
-            <div className="hero-banner-main">
-                <div className="hero-banner-image"></div>
+            <div className="hero-banner-main hero-img-fugleforing">
                 <div className="hero-circle circle-movement">
                     <div className="hero-inner-circle">
                         <div className="hero-text alt-movement">
@@ -20,7 +19,12 @@ function FugleForing() {
             <div className="white-div">
                 <div className="sub-div-box">
                     <div className="sidebyside">
-                        <div className="imgplaceholder"></div>
+                        <div className="img-main">
+                            <img
+                                src="/fugleforing/fugleforing01.jpg"
+                                alt="Fugl i tre"
+                            />
+                        </div>
                         <div className="sub-div-text">
                             <h1>HVORFOR FÔRE HELE ÅRET?</h1>
                             <p>
@@ -74,7 +78,12 @@ function FugleForing() {
                                     Hver art har sine foretrukne fôremner.
                                 </p>
                             </div>
-                            <div className="imgplaceholder"></div>
+                            <div className="img-main">
+                                <img
+                                    src="/fugleforing/fugleforing02.jpg"
+                                    alt="Fugl i tre"
+                                />
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -83,7 +92,12 @@ function FugleForing() {
             <div className="offwhite-div">
                 <div className="sub-div-box">
                     <div className="sidebyside">
-                        <div className="imgplaceholder"></div>
+                        <div className="img-main">
+                            <img
+                                src="/fugleforing/fugleforing03.jpg"
+                                alt="Fugl som spiser"
+                            />
+                        </div>
                         <div className="sub-div-text">
                             <h1>HVA KAN DU FÔRE MED?</h1>
                             <p>
@@ -170,11 +184,21 @@ function FugleForing() {
                                     biter.
                                 </p>
                             </div>
-                            <div className="imgplaceholder"></div>
+                            <div className="img-main">
+                                <img
+                                    src="/fugleforing/fugleforing04.jpg"
+                                    alt="Fugl som spiser"
+                                />
+                            </div>
                         </div>
                     </div>
                     <div className="sidebyside">
-                        <div className="imgplaceholder"></div>
+                        <div className="img-main">
+                            <img
+                                src="/fugleforing/fugleforing05.jpg"
+                                alt="Fugl i tre"
+                            />
+                        </div>
                         <div className="sub-div-text">
                             <p>
                                 <span className="greentext p-demi">

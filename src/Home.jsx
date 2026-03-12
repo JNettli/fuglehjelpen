@@ -1,8 +1,7 @@
 function Home() {
     return (
         <>
-            <div className="hero-banner-main">
-                <div className="hero-banner-image"></div>
+            <div className="hero-banner-main hero-img-home">
                 <div className="hero-circle">
                     <div className="hero-inner-circle">
                         <div className="hero-text">
@@ -27,7 +26,9 @@ function Home() {
             </div>
             <div className="white-div">
                 <div className="main-div-box">
-                    <div className="imgplaceholder"></div>
+                    <div className="imgplaceholder">
+                        <img src="/fuglehjelp.svg" alt="Fuglehjelpen logo" />
+                    </div>
                     <div className="main-div-textbox">
                         <h1>HVEM ER FUGLEHJELPEN?</h1>
                         <p>
@@ -102,7 +103,9 @@ function Home() {
                             <button>Les mer her</button>
                         </a>
                     </div>
-                    <div className="imgplaceholder"></div>
+                    <div className="img-main">
+                        <img src="/home/hjem01.jpg" alt="Fugl på matstasjon" />
+                    </div>
                 </div>
             </div>
             <div className="offwhite-div">
@@ -117,7 +120,12 @@ function Home() {
                         </div>
                         <div className="rehab-fugler">
                             <div className="rehab-fugler-box">
-                                <div className="rehab-fugler-img"></div>
+                                <div className="rehab-fugler-img">
+                                    <img
+                                        src="/home/hjem02.jpg"
+                                        alt="Nødhjelp for Havsule"
+                                    />
+                                </div>
                                 <div className="rehab-fugler-text">
                                     <h2 className="p-demi">
                                         Nødhjelp for Havsule
@@ -130,7 +138,12 @@ function Home() {
                                 </div>
                             </div>
                             <div className="rehab-fugler-box">
-                                <div className="rehab-fugler-img"></div>
+                                <div className="rehab-fugler-img">
+                                    <img
+                                        src="/home/hjem03.jpg"
+                                        alt="Perleugle med hjernerystelse"
+                                    />
+                                </div>
                                 <div className="rehab-fugler-text">
                                     <h2 className="p-demi">
                                         Perleugle med hjernerystelse
@@ -142,7 +155,12 @@ function Home() {
                                 </div>
                             </div>
                             <div className="rehab-fugler-box">
-                                <div className="rehab-fugler-img"></div>
+                                <div className="rehab-fugler-img">
+                                    <img
+                                        src="/home/hjem04.jpg"
+                                        alt="Spurvehauk på rehab"
+                                    />
+                                </div>
                                 <div className="rehab-fugler-text">
                                     <h2 className="p-demi">
                                         Spurvehauk på rehab
@@ -173,7 +191,9 @@ function Home() {
                             <button>Les mer her</button>
                         </a>
                     </div>
-                    <div className="imgplaceholder"></div>
+                    <div className="img-main">
+                        <img src="/home/hjem05.jpg" alt="Andunge i hånd" />
+                    </div>
                 </div>
             </div>
             <div className="offwhite-div">
@@ -189,31 +209,40 @@ function Home() {
                         <br />
                         <br />
                         <p>
-                            <p id="support-highlight" className="stott-inline">
+                            <span
+                                id="support-highlight"
+                                className="stott-inline"
+                            >
                                 Kontonummer:{" "}
-                            </p>
+                            </span>
                             15030726852,{" "}
-                            <p id="support-highlight" className="stott-inline">
+                            <span
+                                id="support-highlight"
+                                className="stott-inline"
+                            >
                                 Vipps:{" "}
-                            </p>
+                            </span>
                             834729,{" "}
                             <a
                                 href="https://www.norsk-tipping.no/grasrotandelen/din-mottaker/983235735"
                                 target="_blank"
                                 className="nodeco blacktext"
                             >
-                                <p id="support-member" className="stott-inline">
+                                <span
+                                    id="support-member"
+                                    className="stott-inline"
+                                >
                                     Grasrotmottaker:{" "}
-                                </p>
+                                </span>
                             </a>
                             Fuglehjelpen,
                             <br />
                             organisasjonsnummer: 983235735
                             <br />
                             <br />
-                            <p className="stott-inline">
+                            <span className="stott-inline">
                                 Eller gi et fast beløp som{" "}
-                            </p>
+                            </span>
                             <a href="/stottoss" id="support-member">
                                 medlem
                             </a>
@@ -228,7 +257,7 @@ function Home() {
             </div>
             <div className="white-div">
                 <div className="main-div-box">
-                    <div>
+                    <div className="other-orgs">
                         <h1>ANDRE HJELPEORGANISASJONER</h1>
                         <ul>
                             <li>

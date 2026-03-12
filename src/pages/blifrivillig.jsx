@@ -35,8 +35,7 @@ function BliFrivillig() {
 
     return (
         <>
-            <div className="hero-banner-main">
-                <div className="hero-banner-image"></div>
+            <div className="hero-banner-main hero-img-blifrivillig">
                 <div className="hero-circle circle-movement">
                     <div className="hero-inner-circle">
                         <div className="hero-text alt-movement">
@@ -52,6 +51,37 @@ function BliFrivillig() {
                 </div>
             </div>
 
+            <div className="offwhite-div">
+                <div className="sub-div-box">
+                    <div className="sidebyside">
+                        <div className="img-main">
+                            <img
+                                src="/blifrivillig/blifrivillig01.jpg"
+                                alt="Lomvi som får hjelp"
+                            />
+                        </div>
+                        <div className="sub-div-text">
+                            <h1>HVA KAN DU HJELPE MED?</h1>
+                            <p>
+                                Vi har frivillige innen alt fra kjørehjelp,
+                                rehabilitering av fugl/nødhjelp til fugl,
+                                bemanning av telefon til regnskap, bygging og
+                                vedlikehold, grafisk design, koding m. m. Blant
+                                oss er det både biologer og fuglekjennere til
+                                frivillige som er helt nye til fuglehjelp, men
+                                som ønsker å lære, og bidra.
+                            </p>
+                            <br />
+                            <br />
+                            <p>
+                                Fortell oss om dine ferdigheter eller hvordan du
+                                ønsker å hjelpe i søknadsskjemaet under, så
+                                finner vi en plass til deg i Fuglehjelpen.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div className="white-div">
                 <div className="main-div-box">
                     <div className="form-div">

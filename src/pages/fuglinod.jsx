@@ -40,8 +40,7 @@ function FuglINod() {
 
     return (
         <>
-            <div className="hero-banner-main">
-                <div className="hero-banner-image"></div>
+            <div className="hero-banner-main hero-img-fuglinod">
                 <div className="hero-circle circle-movement">
                     <div className="hero-inner-circle">
                         <div className="hero-text alt-movement">
@@ -79,7 +78,12 @@ function FuglINod() {
             <div className="white-div">
                 <div className="sub-div-box">
                     <div className="sidebyside">
-                        <div className="imgplaceholder"></div>
+                        <div className="img-main">
+                            <img
+                                src="/fuglinod/fuglinod01.jpg"
+                                alt="Fugl som får hjelp"
+                            />
+                        </div>
                         <div className="sub-div-text">
                             <div>
                                 <h1>HVA KAN DU SELV GJØRE?</h1>
@@ -172,10 +176,20 @@ function FuglINod() {
                                 </li>
                             </ol>
                         </div>
-                        <div className="imgplaceholder"></div>
+                        <div className="img-main">
+                            <img
+                                src="/fuglinod/fuglinod02.jpg"
+                                alt="Overrasket fugl som får hjelp"
+                            />
+                        </div>
                     </div>
                     <div className="sidebyside">
-                        <div className="imgplaceholder"></div>
+                        <div className="img-main">
+                            <img
+                                src="/fuglinod/fuglinod03.jpg"
+                                alt="Ugle som stirrer"
+                            />
+                        </div>
                         <div className="sub-div-text">
                             <ol className="helplist" start={7}>
                                 <li id="kollisjon">
@@ -245,7 +259,12 @@ function FuglINod() {
                                 </li>
                             </ol>
                         </div>
-                        <div className="imgplaceholder"></div>
+                        <div className="img-main">
+                            <img
+                                src="/fuglinod/fuglinod04.jpg"
+                                alt="Fugl som får hjelp med skadet vinge"
+                            />
+                        </div>
                     </div>
                 </div>
             </div>
@@ -362,10 +381,20 @@ function FuglINod() {
                                 </li>
                             </ol>
                         </div>
-                        <div className="imgplaceholder"></div>
+                        <div className="img-main">
+                            <img
+                                src="/fuglinod/fuglinod05.jpg"
+                                alt="Fugl som får hjelp"
+                            />
+                        </div>
                     </div>
                     <div className="sidebyside">
-                        <div className="imgplaceholder"></div>
+                        <div className="img-main">
+                            <img
+                                src="/fuglinod/fuglinod06.jpg"
+                                alt="Fugl som får hjelp"
+                            />
+                        </div>
                         <div className="sub-div-text">
                             <ol className="helplist" start={4}>
                                 <li>
@@ -443,10 +472,21 @@ function FuglINod() {
                                 </li>
                             </ol>
                         </div>
-                        <div className="imgplaceholder"></div>
+                        <div className="img-main">
+                            <img
+                                src="/fuglinod/fuglinod07.jpg"
+                                alt="Fugl som får hjelp"
+                            />
+                        </div>
                     </div>
+                    <div className="med-spacer"></div>
                     <div className="sidebyside">
-                        <div className="imgplaceholder"></div>
+                        <div className="img-main">
+                            <img
+                                src="/fuglinod/fuglinod08.jpg"
+                                alt="Fugl som får hjelp"
+                            />
+                        </div>
                         <div className="sub-div-text">
                             <ol className="helplist" start={3}>
                                 <li>
@@ -484,6 +524,7 @@ function FuglINod() {
                             </ol>
                         </div>
                     </div>
+                    <div className="med-spacer"></div>
                     <div className="sidebyside">
                         <div className="sub-div-text">
                             <ol className="helplist" start={5}>
@@ -554,10 +595,21 @@ function FuglINod() {
                                 </li>
                             </ol>
                         </div>
-                        <div className="imgplaceholder"></div>
+                        <div className="img-main">
+                            <img
+                                src="/fuglinod/fuglinod09.jpg"
+                                alt="Fugl som får hjelp"
+                            />
+                        </div>
                     </div>
+                    <div className="med-spacer"></div>
                     <div className="sidebyside">
-                        <div className="imgplaceholder"></div>
+                        <div className="img-main">
+                            <img
+                                src="/fuglinod/fuglinod10.jpg"
+                                alt="Fugl som får hjelp"
+                            />
+                        </div>
                         <div className="sub-div-text">
                             <ol className="helplist" start={7}>
                                 <li>
@@ -595,6 +647,7 @@ function FuglINod() {
                             </ol>
                         </div>
                     </div>
+                    <div className="med-spacer"></div>
                     <div className="sidebyside">
                         <div className="sub-div-text">
                             <ol className="helplist" start={8}>
@@ -625,7 +678,12 @@ function FuglINod() {
                                 </li>
                             </ol>
                         </div>
-                        <div className="imgplaceholder"></div>
+                        <div className="img-main">
+                            <img
+                                src="/fuglinod/fuglinod11.jpg"
+                                alt="Fugl som får hjelp"
+                            />
+                        </div>
                     </div>
                 </div>
             </div>

@@ -1,8 +1,7 @@
 function OmOss() {
     return (
         <>
-            <div className="hero-banner-main">
-                <div className="hero-banner-image"></div>
+            <div className="hero-banner-main hero-img-omoss">
                 <div className="hero-circle circle-movement">
                     <div className="hero-inner-circle">
                         <div className="hero-text alt-movement">
@@ -29,7 +28,7 @@ function OmOss() {
             <div className="white-div">
                 <div className="sub-div-box">
                     <div className="sidebyside">
-                        <div className="imgplaceholder"></div>
+                        <img src="/fuglehjelp.svg" alt="Fuglehjelpen logo" />
                         <div className="sub-div-text">
                             <h1>HVEM ER FUGLEHJELPEN?</h1>
                             <p>
@@ -84,11 +83,21 @@ function OmOss() {
                                 instanser utøves ikke praktisk fuglehjelp idag.
                             </p>
                         </div>
-                        <div className="imgplaceholder"></div>
+                        <div className="img-main">
+                            <img
+                                src="/omoss/omoss01.jpg"
+                                alt="Pelle Wickstrøm"
+                            />
+                        </div>
                     </div>
                     <div className="spacer">
                         <div className="sidebyside">
-                            <div className="imgplaceholder"></div>
+                            <div className="img-main">
+                                <img
+                                    src="/omoss/omoss02.jpg"
+                                    alt="Due i duetårn"
+                                />
+                            </div>
                             <div className="sub-div-text">
                                 <p>
                                     På slutten av 90-tallet samarbeidet
@@ -142,14 +151,18 @@ function OmOss() {
                                 Bergen.
                             </p>
                         </div>
-                        <div className="imgplaceholder"></div>
+                        <div className="img-main">
+                            <img src="/omoss/omoss03.jpg" alt="Duetårn" />
+                        </div>
                     </div>
                 </div>
             </div>
             <div className="offwhite-div">
                 <div className="sub-div-box">
                     <div className="sidebyside">
-                        <div className="imgplaceholder"></div>
+                        <div className="img-main">
+                            <img src="/omoss/omoss04.jpg" alt="Duetårn" />
+                        </div>
                         <div className="sub-div-text">
                             <h1>FORDELER MED DUETÅRN</h1>
                             <p>
@@ -225,7 +238,9 @@ function OmOss() {
                                     duene sine.
                                 </p>
                             </div>
-                            <div className="imgplaceholder"></div>
+                            <div className="img-main">
+                                <img src="/omoss/omoss05.jpg" alt="Due" />
+                            </div>
                         </div>
                     </div>
                 </div>

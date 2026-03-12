@@ -35,8 +35,7 @@ function StottOss() {
 
     return (
         <>
-            <div className="hero-banner-main">
-                <div className="hero-banner-image"></div>
+            <div className="hero-banner-main hero-img-stottoss">
                 <div className="hero-circle circle-movement">
                     <div className="hero-inner-circle">
                         <div className="hero-text alt-movement">
@@ -74,14 +73,19 @@ function StottOss() {
                             </ul>
                             <p>Alle bidrag går kun til hjelp av fugl.</p>
                         </div>
-                        <div className="imgplaceholder"></div>
+                        <div className="img-main">
+                            <img
+                                src="/stottoss/stottoss01.jpg"
+                                alt="Fugl i hånd"
+                            />
+                        </div>
                     </div>
                 </div>
             </div>
             <div className="offwhite-div">
-                <div className="main-div-box">
-                    <div className="imgplaceholder"></div>
-                    <div className="sub-div-text">
+                <div className="member-logo"></div>
+                <div className="member-div-box">
+                    <div className="sub-div-text member-text">
                         <h1>MEDLEMSKAP</h1>
                         <p>Fyll ut navn og e-post så tar vi kontakt.</p>
                         <p>Ordinært medlemskap 350,-</p>
@@ -154,11 +158,21 @@ function StottOss() {
                                 grevling som en art i sitt repertoar.
                             </p>
                         </div>
-                        <div className="imgplaceholder"></div>
+                        <div className="img-main">
+                            <img
+                                src="/stottoss/stottoss02.jpg"
+                                alt="Fugl med fisk i nebbet"
+                            />
+                        </div>
                     </div>
                     <div className="spacer"></div>
                     <div className="sidebyside">
-                        <div className="imgplaceholder"></div>
+                        <div className="img-main">
+                            <img
+                                src="/stottoss/stottoss03.jpg"
+                                alt="Fugl i bur"
+                            />
+                        </div>
                         <div className="sub-div-text">
                             <p>
                                 Å rehabilitere vilt i Norge har lav status. Slik
@@ -203,13 +217,25 @@ function StottOss() {
                                 glassruter, ledninger, trafikk, vindturbiner,
                                 nedbygging av leveområder, landbrukspraksis og
                                 skogshogst i hekketiden (det er det ikke mange
-                                land som tillater!). Ta gjerne kontakt med oss -
-                                enten du har tid til overs, eller ønsker å
-                                støtte oss økonomisk i dette viktige arbeidet
-                                for fuglenes beste. Din hjelp setter spor
+                                land som tillater!).
                             </p>
+                            <br />
+                            <br />
+                            <p>
+                                Ta gjerne kontakt med oss - enten du har tid til
+                                overs, eller ønsker å støtte oss økonomisk i
+                                dette viktige arbeidet for fuglenes beste.
+                            </p>
+                            <br />
+                            <br />
+                            <p>Din hjelp setter spor</p>
                         </div>
-                        <div className="imgplaceholder"></div>
+                        <div className="img-main">
+                            <img
+                                src="/stottoss/stottoss04.jpg"
+                                alt="Ugle i et tre"
+                            />
+                        </div>
                     </div>
                 </div>
             </div>
