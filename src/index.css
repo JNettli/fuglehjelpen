@@ -174,27 +174,27 @@ h1 {
 }
 
 .hero-img-home {
-    background-image: url("home/herobanner.jpg");
+    background-image: url("/home/herobanner.jpg");
 }
 
 .hero-img-fuglinod {
-    background-image: url("fuglinod/herobanner.jpg");
+    background-image: url("/fuglinod/herobanner.jpg");
 }
 
 .hero-img-fugleforing {
-    background-image: url("fugleforing/herobanner.jpg");
+    background-image: url("/fugleforing/herobanner.jpg");
 }
 
 .hero-img-omoss {
-    background-image: url("omoss/herobanner.jpg");
+    background-image: url("/omoss/herobanner.jpg");
 }
 
 .hero-img-blifrivillig {
-    background-image: url("blifrivillig/herobanner.jpg");
+    background-image: url("/blifrivillig/herobanner.jpg");
 }
 
 .hero-img-stottoss {
-    background-image: url("stottoss/herobanner.jpg");
+    background-image: url("/stottoss/herobanner.jpg");
 }
 
 .hero-circle-wrapper {
