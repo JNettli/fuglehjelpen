@@ -1,24 +1,37 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import "../../index.css";
 
 function Modal({ isOpen, onClose, children }) {
     const [isVisible, setIsVisible] = useState(false);
+    const navigatingRef = useRef(false);
 
     useEffect(() => {
         if (isOpen) {
             setIsVisible(true);
+            navigatingRef.current = false;
         }
     }, [isOpen]);
 
     const handleClose = () => {
         setIsVisible(false);
-        setTimeout(onClose, 300);
+
+        setTimeout(() => {
+            onClose();
+
+            if (!navigatingRef.current) {
+                window.location.reload();
+            }
+        }, 300);
     };
 
     const handleOverlayClick = (e) => {
-        if (e.target.className === "modal-overlay show") {
+        if (e.target.classList.contains("modal-overlay")) {
             handleClose();
         }
+    };
+
+    const handleLinkClick = () => {
+        navigatingRef.current = true;
     };
 
     if (!isOpen && !isVisible) return null;
@@ -33,7 +46,15 @@ function Modal({ isOpen, onClose, children }) {
                     ✕
                 </button>
 
-                {children}
+                <div
+                    onClick={(e) => {
+                        if (e.target.tagName === "A") {
+                            handleLinkClick();
+                        }
+                    }}
+                >
+                    {children}
+                </div>
             </div>
         </div>
     );

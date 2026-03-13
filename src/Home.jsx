@@ -119,7 +119,10 @@ function Home() {
                             </p>
                         </div>
                         <div className="rehab-fugler">
-                            <div className="rehab-fugler-box">
+                            <a
+                                src="https://www.facebook.com/Fuglehjelpen/posts/pfbid0hu3w4rEpqtB1isbpNEdm2hLLwKiwTzYh71eFsVmaNWZ1uz2jcFYdJKpwrckKDwx7l"
+                                className="rehab-fugler-box"
+                            >
                                 <div className="rehab-fugler-img">
                                     <img
                                         src="/home/hjem02.jpg"
@@ -136,7 +139,7 @@ function Home() {
                                         egenhånd.
                                     </p>
                                 </div>
-                            </div>
+                            </a>
                             <div className="rehab-fugler-box">
                                 <div className="rehab-fugler-img">
                                     <img
@@ -177,7 +180,7 @@ function Home() {
                 </div>
             </div>
             <div className="white-div">
-                <div className="main-div-box">
+                <div className="main-div-box alt">
                     <div className="main-div-textbox">
                         <h1>BLI FRIVILLIG</h1>
                         <p className="greentext bigger-text">
@@ -258,7 +261,14 @@ function Home() {
             <div className="white-div">
                 <div className="main-div-box">
                     <div className="other-orgs">
-                        <h1>ANDRE HJELPEORGANISASJONER</h1>
+                        <h1>
+                            <div>ANDRE HJELPEORGANISASJONER</div>
+                            <span>
+                                ANDRE HELPE-
+                                <br />
+                                ORGANISASJONER
+                            </span>
+                        </h1>
                         <ul>
                             <li>
                                 <a
@@ -285,7 +295,7 @@ function Home() {
                                 </a>
                             </li>
                             <li>
-                                Byfuglhjelpen Trondheim:{" "}
+                                <span>Byfuglhjelpen</span> Trondheim:{" "}
                                 <a href="tel:+4746468600">46468600</a>
                             </li>
                         </ul>

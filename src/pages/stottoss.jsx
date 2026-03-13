@@ -53,7 +53,7 @@ function StottOss() {
 
             <div className="white-div">
                 <div className="sub-div-box">
-                    <div className="sidebyside">
+                    <div className="sidebyside alt">
                         <div className="sub-div-text">
                             <p>
                                 Fuglehjelpen er avhengige av din hjelp og støtte
@@ -61,15 +61,30 @@ function StottOss() {
                                 villfugler. Ønsker du å støtte Fuglehjelpen
                                 økonomisk, kan du sende et valgfritt beløp til:
                             </p>
-                            <ul>
+                            <ul className="orangetext">
                                 <li>
-                                    Kontonummer:{" "}
+                                    <span className="p-demi-orange">
+                                        Kontonummer:{" "}
+                                    </span>
                                     <span className="blacktext">
                                         15030726852
                                     </span>
                                 </li>
-                                <li>Vipps:</li>
-                                <li>Grasrotmottaker:</li>
+                                <li>
+                                    <span className="p-demi-orange">
+                                        Vipps:{" "}
+                                    </span>
+                                    <span className="blacktext">834729</span>
+                                </li>
+                                <li>
+                                    <span className="p-demi-orange">
+                                        Grasrotmottaker:{" "}
+                                    </span>
+                                    <span className="blacktext">
+                                        Fuglehjelpen, organisasjonsnummer:
+                                        983235735
+                                    </span>
+                                </li>
                             </ul>
                             <p>Alle bidrag går kun til hjelp av fugl.</p>
                         </div>
@@ -82,7 +97,7 @@ function StottOss() {
                     </div>
                 </div>
             </div>
-            <div className="offwhite-div">
+            <div className="offwhite-div member-box alt">
                 <div className="member-logo"></div>
                 <div className="member-div-box">
                     <div className="sub-div-text member-text">
@@ -92,7 +107,7 @@ function StottOss() {
                         <p>Familiemedlemskap 500,-</p>
                         <br />
                         <br />
-                        <p>Velkommen som meldem i Fuglehjelpen!</p>
+                        <p>Velkommen som medlem i Fuglehjelpen!</p>
                         <br />
                         <br />
 
@@ -135,7 +150,7 @@ function StottOss() {
             </div>
             <div className="white-div">
                 <div className="sub-div-box">
-                    <div className="sidebyside">
+                    <div className="sidebyside alt">
                         <div className="sub-div-text">
                             <h1>ET VIKTIG ARBEID</h1>
                             <p>
@@ -202,7 +217,7 @@ function StottOss() {
                         </div>
                     </div>
                     <div className="spacer"></div>
-                    <div className="sidebyside">
+                    <div className="sidebyside alt">
                         <div className="sub-div-text">
                             <p>
                                 Vi ønsker drahjelp fra myndighetene, ikke
@@ -240,8 +255,12 @@ function StottOss() {
                 </div>
             </div>
             <Modal isOpen={showModal} onClose={() => setShowModal(false)}>
-                <h1>Tusen Takk!</h1>
-                <p>Haha peepee</p>
+                <h1>SENDT</h1>
+                <p>
+                    Takk for at du ønsker å blir medlem. <br />
+                    Vi vil svare deg så fort vi har mulighet.
+                </p>
+                <a href="/">Tilbake til hovedside</a>
             </Modal>
         </>
     );

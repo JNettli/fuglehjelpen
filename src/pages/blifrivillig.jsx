@@ -218,6 +218,7 @@ function BliFrivillig() {
                                 name="hjelpe-med"
                                 id="hjelpe-med"
                                 placeholder="Jeg har utdanning innen ... og ønsker veldig gjerne å hjelpe til med..."
+                                minLength={30}
                                 required
                             ></textarea>
 
@@ -290,6 +291,7 @@ function BliFrivillig() {
                                 name="grunnlag"
                                 id="grunnlag"
                                 placeholder="Jeg har lyst til å hjelpe fordi..."
+                                minLength={30}
                                 required
                             ></textarea>
 
@@ -302,8 +304,12 @@ function BliFrivillig() {
             </div>
 
             <Modal isOpen={showModal} onClose={() => setShowModal(false)}>
-                <h1>Tusen takk!</h1>
-                <p>Søknaden din er sendt. Vi tar kontakt med deg snart.</p>
+                <h1>SENDT</h1>
+                <p>
+                    Takk for at du ønsker å bli frivillig. <br />
+                    Vi vil svare deg så fort vi har mulighet.
+                </p>
+                <a href="/">Tilbake til hovedside</a>
             </Modal>
         </>
     );

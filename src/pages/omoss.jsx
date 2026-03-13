@@ -1,4 +1,18 @@
+import ImageRotator from "../assets/components/ImageRotator";
+
 function OmOss() {
+    const leftImages = [
+        "/omoss/omoss_slideshow01.jpg",
+        "/omoss/omoss_slideshow03.jpg",
+        "/omoss/omoss_slideshow05.jpg",
+    ];
+
+    const rightImages = [
+        "/omoss/omoss_slideshow02.jpg",
+        "/omoss/omoss_slideshow04.jpg",
+        "/omoss/omoss_slideshow06.jpg",
+    ];
+
     return (
         <>
             <div className="hero-banner-main hero-img-omoss">
@@ -19,8 +33,15 @@ function OmOss() {
             <div className="green-div">
                 <div className="sub-div-box">
                     <div className="sidebyside">
-                        <div className="imgplaceholder"></div>
-                        <div className="imgplaceholder"></div>
+                        <div className="image-rotator">
+                            <div className="rotator-left">
+                                <ImageRotator images={leftImages} />
+                            </div>
+
+                            <div className="rotator-right">
+                                <ImageRotator images={rightImages} />
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -28,7 +49,12 @@ function OmOss() {
             <div className="white-div">
                 <div className="sub-div-box">
                     <div className="sidebyside">
-                        <img src="/fuglehjelp.svg" alt="Fuglehjelpen logo" />
+                        <div className="imgplaceholder">
+                            <img
+                                src="/fuglehjelp.svg"
+                                alt="Fuglehjelpen logo"
+                            />
+                        </div>
                         <div className="sub-div-text">
                             <h1>HVEM ER FUGLEHJELPEN?</h1>
                             <p>
@@ -56,7 +82,7 @@ function OmOss() {
             </div>
             <div className="offwhite-div">
                 <div className="sub-div-box">
-                    <div className="sidebyside">
+                    <div className="sidebyside alt">
                         <div className="sub-div-text">
                             <h1>FUGLEHJELPENS HISTORIE</h1>
                             <p>
@@ -132,7 +158,7 @@ function OmOss() {
             </div>
             <div className="white-div">
                 <div className="sub-div-box">
-                    <div className="sidebyside">
+                    <div className="sidebyside alt">
                         <div className="sub-div-text">
                             <h1>DUETÅRNENE I NORGE</h1>
                             <p>
@@ -203,7 +229,7 @@ function OmOss() {
                         </div>
                     </div>
                     <div className="spacer">
-                        <div className="sidebyside">
+                        <div className="sidebyside alt">
                             <div className="sub-div-text">
                                 <p>
                                     <span className="greentext p-demi">

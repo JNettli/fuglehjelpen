@@ -1,7 +1,7 @@
 function FugleForing() {
     return (
         <>
-            <div className="hero-banner-main hero-img-fugleforing">
+            <div className="hero-banner-main hero-img-fugleforing hero-img-mover">
                 <div className="hero-circle circle-movement">
                     <div className="hero-inner-circle">
                         <div className="hero-text alt-movement">
@@ -53,37 +53,34 @@ function FugleForing() {
                             </p>
                         </div>
                     </div>
-                    <div className="sub-div-box">
-                        <div className="sidebyside">
-                            <div className="sub-div-text">
-                                <p>
-                                    I sommerperioden skal unger mates, og en
-                                    fylt frødispenser letter arbeidet. Sensommer
-                                    og tidlig høst er absolutt tiden for å la
-                                    fuglene få legge på seg til vinteren. Og i
-                                    vintermånedene er mating helt nødvendig.
-                                    Fugler dør av mangel på mat hver vinter,
-                                    enten av sult eller frost pga dårlig
-                                    almenntilstand. Ønsker du kun å mate i
-                                    vinterhalvåret, kan du mate fra begynnelsen
-                                    av oktober til slutten av mai. Fuglehjelpen
-                                    anbefaler at alle fuglearter får mat - ikke
-                                    bare brettfuglene. Skjærer, kråker, måker og
-                                    duer trenger også mat for å holde seg friske
-                                    og fri fra sykdommer. Vi ønsker et bredt
-                                    artsmangfold, og alle fuglene har sin rolle
-                                    i det store bildet. Selv om fugler er mindre
-                                    kresne enn normalt i magre tider, så krever
-                                    et rikt fugleliv et variert utvalg av fôr.
-                                    Hver art har sine foretrukne fôremner.
-                                </p>
-                            </div>
-                            <div className="img-main">
-                                <img
-                                    src="/fugleforing/fugleforing02.jpg"
-                                    alt="Fugl i tre"
-                                />
-                            </div>
+                    <div className="sidebyside alt med-spacer">
+                        <div className="sub-div-text">
+                            <p>
+                                I sommerperioden skal unger mates, og en fylt
+                                frødispenser letter arbeidet. Sensommer og
+                                tidlig høst er absolutt tiden for å la fuglene
+                                få legge på seg til vinteren. Og i
+                                vintermånedene er mating helt nødvendig. Fugler
+                                dør av mangel på mat hver vinter, enten av sult
+                                eller frost pga dårlig almenntilstand. Ønsker du
+                                kun å mate i vinterhalvåret, kan du mate fra
+                                begynnelsen av oktober til slutten av mai.
+                                Fuglehjelpen anbefaler at alle fuglearter får
+                                mat - ikke bare brettfuglene. Skjærer, kråker,
+                                måker og duer trenger også mat for å holde seg
+                                friske og fri fra sykdommer. Vi ønsker et bredt
+                                artsmangfold, og alle fuglene har sin rolle i
+                                det store bildet. Selv om fugler er mindre
+                                kresne enn normalt i magre tider, så krever et
+                                rikt fugleliv et variert utvalg av fôr. Hver art
+                                har sine foretrukne fôremner.
+                            </p>
+                        </div>
+                        <div className="img-main">
+                            <img
+                                src="/fugleforing/fugleforing02.jpg"
+                                alt="Fugl i tre"
+                            />
                         </div>
                     </div>
                 </div>
@@ -138,7 +135,7 @@ function FugleForing() {
                         </div>
                     </div>
                     <div className="spacer">
-                        <div className="sidebyside">
+                        <div className="sidebyside alt">
                             <div className="sub-div-text">
                                 <p>
                                     <span className="greentext p-demi">
@@ -245,6 +242,11 @@ function FugleForing() {
                 <div className="sub-div-box">
                     <div className="centered">
                         <h1>FÔRINGSTABELL</h1>
+
+                        <a href="/foringstabell" className="feeding-link">
+                            Klikk her for foringstabell
+                        </a>
+
                         <table>
                             <tr>
                                 <td>Art</td>

@@ -24,7 +24,7 @@ function Footer() {
                     </div>
                     <div className="footer-infobox">
                         <h2>Følg oss</h2>
-                        <div className="logo">
+                        <div className="facelogo">
                             <img
                                 src="./src/assets/img/facebook.svg"
                                 alt="Facebook logo"

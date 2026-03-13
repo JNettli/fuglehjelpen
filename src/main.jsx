@@ -8,6 +8,7 @@ import FugleForing from "./pages/fugleforing";
 import OmOss from "./pages/omoss";
 import StottOss from "./pages/stottoss";
 import BliFrivillig from "./pages/blifrivillig";
+import Foringstabell from "./pages/foringstabell";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { HelmetProvider } from "@vuer-ai/react-helmet-async";
 
@@ -22,6 +23,7 @@ const router = createBrowserRouter([
             { path: "/omoss", element: <OmOss /> },
             { path: "/stottoss", element: <StottOss /> },
             { path: "/blifrivillig", element: <BliFrivillig /> },
+            { path: "/foringstabell", element: <Foringstabell /> },
         ],
     },
 ]);

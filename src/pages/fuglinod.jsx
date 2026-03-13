@@ -1,7 +1,9 @@
 import { useEffect, useState } from "react";
+import ImageRotator from "../assets/components/ImageRotator";
 
 function FuglINod() {
     const [active, setActive] = useState("");
+    const [open, setOpen] = useState(false);
 
     const ids = [
         "ikkesvar",
@@ -38,9 +40,23 @@ function FuglINod() {
         return () => observer.disconnect();
     }, []);
 
+    const leftImages = [
+        "/fuglinod/fuglinod_lomvi_slideshow03.jpg",
+        "/fuglinod/fuglinod_lomvi_slideshow05.jpg",
+        "/fuglinod/fuglinod_lomvi_slideshow07.jpg",
+        "/fuglinod/fuglinod_lomvi_slideshow01.jpg",
+    ];
+
+    const rightImages = [
+        "/fuglinod/fuglinod_lomvi_slideshow02.jpg",
+        "/fuglinod/fuglinod_lomvi_slideshow04.jpg",
+        "/fuglinod/fuglinod_lomvi_slideshow06.jpg",
+        "/fuglinod/fuglinod_lomvi_slideshow08.jpg",
+    ];
+
     return (
         <>
-            <div className="hero-banner-main hero-img-fuglinod">
+            <div className="hero-banner-main hero-img-fuglinod hero-img-mover">
                 <div className="hero-circle circle-movement">
                     <div className="hero-inner-circle">
                         <div className="hero-text alt-movement">
@@ -61,7 +77,8 @@ function FuglINod() {
             <div className="offwhite-div">
                 <div className="quicknavbox">
                     <p>Hurtignavigering</p>
-                    <div className="quicknav">
+
+                    <div className={`quicknav ${open ? "open" : ""}`}>
                         <a href="#ikkesvar">Får ikke svar?</a>
                         <a href="#halting">Halting</a>
                         <a href="#vingeproblemer">Vingeproblemer</a>
@@ -72,6 +89,13 @@ function FuglINod() {
                         <a href="#lomvi">Lomvi</a>
                         <a href="#fugleunger">Fugleunger</a>
                     </div>
+                    <button
+                        className={`quicknav-toggle ${open ? "open" : ""}`}
+                        onClick={() => setOpen(!open)}
+                        aria-label="Åpne hurtignavigering"
+                    >
+                        ▼
+                    </button>
                 </div>
             </div>
 
@@ -137,7 +161,7 @@ function FuglINod() {
                             </div>
                         </div>
                     </div>
-                    <div className="sidebyside">
+                    <div className="sidebyside alt">
                         <div className="sub-div-text">
                             <ol className="helplist" start={4}>
                                 <li id="halting">
@@ -226,7 +250,7 @@ function FuglINod() {
                             </ol>
                         </div>
                     </div>
-                    <div className="sidebyside">
+                    <div className="sidebyside alt">
                         <div className="sub-div-text">
                             <ol className="helplist" start={10}>
                                 <li id="vingeproblemer">
@@ -331,15 +355,22 @@ function FuglINod() {
                             </div>
                         </div>
                         <div className="infobox-container">
-                            <div className="imgplaceholder"></div>
-                            <div className="imgplaceholder"></div>
+                            <div className="image-rotator">
+                                <div className="rotator-left">
+                                    <ImageRotator images={leftImages} />
+                                </div>
+
+                                <div className="rotator-right">
+                                    <ImageRotator images={rightImages} />
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div className="white-div">
                 <div className="sub-div-box">
-                    <div className="sidebyside">
+                    <div className="sidebyside alt">
                         <div className="sub-div-text">
                             <h1 id="fugleunger">FUGLEUNGER</h1>
                             <ol className="helplist" start={1}>
@@ -439,7 +470,7 @@ function FuglINod() {
 
             <div className="offwhite-div">
                 <div className="sub-div-box">
-                    <div className="sidebyside">
+                    <div className="sidebyside alt">
                         <div className="sub-div-text">
                             <h1 id="fugleunger">FOSTRE OPP FUGLEUNGER</h1>
                             <ol className="helplist" start={1}>
@@ -525,7 +556,7 @@ function FuglINod() {
                         </div>
                     </div>
                     <div className="med-spacer"></div>
-                    <div className="sidebyside">
+                    <div className="sidebyside alt">
                         <div className="sub-div-text">
                             <ol className="helplist" start={5}>
                                 <li>
@@ -648,7 +679,7 @@ function FuglINod() {
                         </div>
                     </div>
                     <div className="med-spacer"></div>
-                    <div className="sidebyside">
+                    <div className="sidebyside alt">
                         <div className="sub-div-text">
                             <ol className="helplist" start={8}>
                                 <li>
