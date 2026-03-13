@@ -2,26 +2,40 @@ function Home() {
     return (
         <>
             <div className="hero-banner-main hero-img-home">
-                <div className="hero-circle">
-                    <div className="hero-inner-circle">
-                        <div className="hero-text">
-                            <p className="hero-h1">
-                                DIN HJELP
-                                <br />
-                                SETTER SPOR
-                            </p>
-                            <p className="hero-p">
-                                Fuglebestanden synker, og med 40% <br />
-                                av norges fugler allerede på rødlisten, teller{" "}
-                                <br />
-                                hver fugl vi får reddet. Bli med å gjøre en
-                                forskjell!
-                            </p>
-                            <a href="/stottoss">
-                                <button>Bli fuglehjelpgiver i dag!</button>
-                            </a>
+                <div className="hero-circle-wrapper">
+                    <div className="hero-circle">
+                        <div className="hero-inner-circle">
+                            <div className="hero-text">
+                                <p className="hero-h1">
+                                    DIN HJELP
+                                    <br />
+                                    SETTER SPOR
+                                </p>
+                                <p className="hero-p">
+                                    Fuglebestanden synker, og med 40% <br />
+                                    av norges fugler allerede på rødlisten,
+                                    teller <br />
+                                    hver fugl vi får reddet. Bli med å gjøre en
+                                    forskjell!
+                                </p>
+                                <a href="/stottoss">
+                                    <button>Bli fuglehjelpgiver i dag!</button>
+                                </a>
+                            </div>
                         </div>
                     </div>
+                </div>
+                <div className="fuglespor-box">
+                    <img
+                        src="/src/assets/img/spor.svg"
+                        alt="fuglespor"
+                        className="fuglespor"
+                    />
+                    <img
+                        src="/src/assets/img/fuglespor_mobil.svg"
+                        alt="fuglespor-mobil"
+                        className="fuglespor-mobil"
+                    />
                 </div>
             </div>
             <div className="white-div">
@@ -30,7 +44,14 @@ function Home() {
                         <img src="/fuglehjelp.svg" alt="Fuglehjelpen logo" />
                     </div>
                     <div className="main-div-textbox">
-                        <h1>HVEM ER FUGLEHJELPEN?</h1>
+                        <h1>
+                            <div>HVEM ER FUGLEHJELPEN?</div>
+                            <span>
+                                HVEM ER
+                                <br />
+                                FUGLEHJELPEN?
+                            </span>
+                        </h1>
                         <p>
                             Fuglehjelpen er en idealistisk organisasjon med
                             fokus på vern og rehabilitering av fugl.
@@ -120,8 +141,10 @@ function Home() {
                         </div>
                         <div className="rehab-fugler">
                             <a
-                                src="https://www.facebook.com/Fuglehjelpen/posts/pfbid0hu3w4rEpqtB1isbpNEdm2hLLwKiwTzYh71eFsVmaNWZ1uz2jcFYdJKpwrckKDwx7l"
+                                href="https://www.facebook.com/Fuglehjelpen/posts/pfbid0hu3w4rEpqtB1isbpNEdm2hLLwKiwTzYh71eFsVmaNWZ1uz2jcFYdJKpwrckKDwx7l"
                                 className="rehab-fugler-box"
+                                target="_blank"
+                                rel="noopener noreferrer"
                             >
                                 <div className="rehab-fugler-img">
                                     <img
@@ -140,7 +163,12 @@ function Home() {
                                     </p>
                                 </div>
                             </a>
-                            <div className="rehab-fugler-box">
+                            <a
+                                href="https://www.facebook.com/Fuglehjelpen/posts/pfbid0NchYFRdBRPjDCWxSTriU68ZMmoJLsowpwJ1R3CzzCpSgSC7B6crpd6gYcqANAaUgl"
+                                className="rehab-fugler-box"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
                                 <div className="rehab-fugler-img">
                                     <img
                                         src="/home/hjem03.jpg"
@@ -156,8 +184,13 @@ function Home() {
                                         spiser og flyr den nå helt selv.
                                     </p>
                                 </div>
-                            </div>
-                            <div className="rehab-fugler-box">
+                            </a>
+                            <a
+                                href="https://www.facebook.com/Fuglehjelpen/posts/pfbid035cXiatZyNw23yGTPrcDWUNgDPEzecVquFZNE2sSG3PnCSeWzdUD4t8dFYkSM1MWpl"
+                                className="rehab-fugler-box"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
                                 <div className="rehab-fugler-img">
                                     <img
                                         src="/home/hjem04.jpg"
@@ -174,7 +207,7 @@ function Home() {
                                         for det fri igjen!
                                     </p>
                                 </div>
-                            </div>
+                            </a>
                         </div>
                     </div>
                 </div>

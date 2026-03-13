@@ -76,6 +76,24 @@ nav p {
     font-size: 19px;
 }
 
+.fuglespor-box {
+    position: absolute;
+    bottom: -80px;
+    left: 464px;
+    z-index: 2;
+}
+
+.fuglespor {
+    width: 915px;
+    height: 317px;
+}
+
+.fuglespor-mobil {
+    display: none;
+    height: 225px;
+    width: 151px;
+}
+
 .navbar {
     width: 1320px;
     padding: 0 60px;
@@ -148,10 +166,10 @@ h1 {
     max-width: 1440px;
     margin: 0 auto;
     height: 828px;
-    overflow: hidden;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    position: relative;
 }
 
 .hero-img-home {
@@ -176,6 +194,11 @@ h1 {
 
 .hero-img-stottoss {
     background-image: url("stottoss/herobanner.jpg");
+}
+
+.hero-circle-wrapper {
+    overflow: hidden;
+    height: 828px;
 }
 
 .hero-circle {
@@ -312,6 +335,10 @@ button:hover {
     max-width: 52%;
 }
 
+.main-div-textbox h1 span {
+    display: none;
+}
+
 .right-side {
     display: flex;
     justify-content: flex-end;
@@ -397,6 +424,7 @@ button:hover {
     border-radius: 20px;
     cursor: pointer;
     transition: 0.3s;
+    text-decoration: none;
 }
 
 .rehab-fugler-box:hover {
@@ -1385,12 +1413,38 @@ footer a:hover {
         background-position: -512px;
     }
 
+    .hero-circle-wrapper {
+        overflow: hidden;
+        height: 700px;
+    }
+
     .hero-circle {
         width: 606px;
         height: 606px;
         right: 202px;
         top: 55%;
         border: 10px solid var(--primary-white);
+    }
+
+    .fuglespor-box {
+        left: 240px;
+        top: 604px;
+    }
+
+    .main-div-textbox h1 div {
+        display: none;
+    }
+
+    .main-div-textbox h1 span {
+        display: block;
+    }
+
+    .fuglespor {
+        display: none;
+    }
+
+    .fuglespor-mobil {
+        display: block;
     }
 
     .hero-inner-circle {
