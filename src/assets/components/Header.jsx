@@ -10,7 +10,7 @@ function Header() {
                 <div className="navbar">
                     <Link to={"/"}>
                         <img
-                            src="/src/assets/img/fuglehjelplogo.svg"
+                            src="/fuglehjelplogo.svg"
                             alt="Fuglehjelpen logo"
                             className="logo"
                         />

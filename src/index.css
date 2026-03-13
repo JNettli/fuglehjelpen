@@ -48,6 +48,7 @@ body {
     flex-direction: column;
     min-width: 320px;
     min-height: 100vh;
+    overflow-x: hidden;
 }
 
 #root {
@@ -965,7 +966,7 @@ footer a:hover {
 .member-logo {
     flex: 1;
     height: 1100px;
-    background-image: url("/src/assets/img/fuglehjelpmedlem.svg");
+    background-image: url("/fuglehjelpmedlem.svg");
     background-size: contain;
     background-position: left;
     background-repeat: no-repeat;

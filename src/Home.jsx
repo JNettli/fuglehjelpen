@@ -27,12 +27,12 @@ function Home() {
                 </div>
                 <div className="fuglespor-box">
                     <img
-                        src="/src/assets/img/spor.svg"
+                        src="/spor.svg"
                         alt="fuglespor"
                         className="fuglespor"
                     />
                     <img
-                        src="/src/assets/img/fuglespor_mobil.svg"
+                        src="/fuglespor_mobil.svg"
                         alt="fuglespor-mobil"
                         className="fuglespor-mobil"
                     />

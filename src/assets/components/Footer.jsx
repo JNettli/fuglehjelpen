@@ -5,7 +5,7 @@ function Footer() {
                 <div className="footer-div-top">
                     <a href="/">
                         <img
-                            src="./src/assets/img/fuglehjelpenfooter.svg"
+                            src="./fuglehjelpenfooter.svg"
                             alt="Fuglehjelpen Logo"
                         />
                     </a>
@@ -25,10 +25,7 @@ function Footer() {
                     <div className="footer-infobox">
                         <h2>Følg oss</h2>
                         <div className="facelogo">
-                            <img
-                                src="./src/assets/img/facebook.svg"
-                                alt="Facebook logo"
-                            />
+                            <img src="./facebook.svg" alt="Facebook logo" />
                             <a
                                 href="https://www.facebook.com/Fuglehjelpen/"
                                 target="_blank"
