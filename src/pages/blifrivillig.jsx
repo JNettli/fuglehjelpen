@@ -212,8 +212,6 @@ function BliFrivillig() {
                                 Nei
                             </label>
 
-                            <br />
-
                             <label htmlFor="relevant-info">
                                 Hvis ja, fortell om erfaringer eller relevant
                                 utdanning
@@ -254,8 +252,6 @@ function BliFrivillig() {
                                 <span className="checkmark"></span>
                                 Nei
                             </label>
-
-                            <br />
 
                             <label>
                                 Hvor ofte kan og vil du hjelpe til?
@@ -301,8 +297,6 @@ function BliFrivillig() {
                                 <span className="checkmark"></span>
                                 Noen ganger i året
                             </label>
-
-                            <br />
 
                             <label htmlFor="grunnlag">
                                 Hvorfor ønsker du å være frivillig i

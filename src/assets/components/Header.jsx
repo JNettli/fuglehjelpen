@@ -1,8 +1,13 @@
-import { Link } from "react-router-dom";
-import { useState } from "react";
+import { Link, useLocation } from "react-router-dom";
+import { useState, useEffect } from "react";
 
 function Header() {
     const [menuOpen, setMenuOpen] = useState(false);
+    const location = useLocation();
+
+    useEffect(() => {
+        setMenuOpen(false);
+    }, [location.pathname]);
 
     return (
         <>

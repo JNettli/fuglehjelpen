@@ -38,10 +38,6 @@
     scroll-margin-top: 128px;
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
 body {
     margin: 0;
     display: flex;
@@ -420,7 +416,6 @@ button {
     display: flex;
     flex-direction: column;
     width: 400px;
-    height: 485px;
     border-radius: 20px;
     cursor: pointer;
     transition: 0.3s;
@@ -966,6 +961,7 @@ footer a {
 
 .img-main img {
     width: 100%;
+    border-radius: 24px;
 }
 
 .member-box {
@@ -1303,6 +1299,7 @@ footer a {
     .member-box {
         align-items: center;
         max-height: fit-content;
+        padding: 0 20px;
     }
 
     .member-div-box {
@@ -1553,6 +1550,10 @@ footer a {
     .mobile-visible {
         display: block;
         letter-spacing: 0.5px;
+    }
+
+    .support span {
+        gap: 8px;
     }
 }
 
