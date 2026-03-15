@@ -184,7 +184,7 @@ h1 {
 
 .hero-banner-main {
     max-width: 1440px;
-    margin: 0 auto;
+    margin: 124px auto 0 auto;
     height: 828px;
     background-size: cover;
     background-position: center;
@@ -1278,6 +1278,10 @@ footer a {
         width: 100%;
     }
 
+    .support span {
+        font-size: 20px;
+    }
+
     .sidebyside {
         flex-direction: column-reverse;
         gap: 64px;
@@ -1447,6 +1451,7 @@ footer a {
 
     .hero-banner-main {
         height: 700px;
+        margin-top: 80px;
     }
 
     .hero-img-mover {
