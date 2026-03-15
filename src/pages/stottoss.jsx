@@ -1,6 +1,7 @@
 import { useState, useRef } from "react";
 import emailjs from "@emailjs/browser";
 import Modal from "../assets/components/Modal";
+import { Link } from "react-router-dom";
 
 function StottOss() {
     const [showModal, setShowModal] = useState(false);
@@ -40,7 +41,7 @@ function StottOss() {
                     <div className="hero-circle circle-movement">
                         <div className="hero-inner-circle">
                             <div className="hero-text alt-movement">
-                                <p className="hero-h1">STØTT OSS</p>
+                                <p className="hero-h1 alt-hero">STØTT OSS</p>
                                 <p className="hero-p alt-text">
                                     I mange tilfeller kan en skadet fugl hjelpes
                                     tilbake til naturen med behandling og
@@ -54,7 +55,7 @@ function StottOss() {
             </div>
 
             <div className="white-div">
-                <div className="sub-div-box">
+                <div className="sub-div-box" id="support">
                     <div className="sidebyside alt">
                         <div className="sub-div-text">
                             <p>
@@ -83,8 +84,8 @@ function StottOss() {
                                         Grasrotmottaker:{" "}
                                     </span>
                                     <span className="blacktext">
-                                        Fuglehjelpen, organisasjonsnummer:
-                                        983235735
+                                        Fuglehjelpen, <br />
+                                        organisasjonsnummer: 983235735
                                     </span>
                                 </li>
                             </ul>
@@ -101,6 +102,7 @@ function StottOss() {
             </div>
             <div className="offwhite-div member-box alt">
                 <div className="member-logo"></div>
+                <div className="member-logo-mobil"></div>
                 <div className="member-div-box">
                     <div className="sub-div-text member-text">
                         <h1>MEDLEMSKAP</h1>
@@ -113,14 +115,14 @@ function StottOss() {
                         <br />
                         <br />
 
-                        <form ref={form} onSubmit={handleSubmit}>
+                        <form ref={form} onSubmit={handleSubmit} id="member">
                             <input
                                 type="text"
                                 name="company"
                                 style={{ display: "none" }}
                             />
                             <label htmlFor="fullname" className="memberlabel">
-                                Navn
+                                Navn<span className="orangetext">*</span>
                             </label>
                             <br />
                             <input
@@ -132,7 +134,7 @@ function StottOss() {
                             />
                             <br />
                             <label htmlFor="email" className="memberlabel">
-                                E-post
+                                E-post<span className="orangetext">*</span>
                             </label>
                             <br />
                             <input
@@ -182,7 +184,6 @@ function StottOss() {
                             />
                         </div>
                     </div>
-                    <div className="spacer"></div>
                     <div className="sidebyside">
                         <div className="img-main">
                             <img
@@ -218,7 +219,6 @@ function StottOss() {
                             </p>
                         </div>
                     </div>
-                    <div className="spacer"></div>
                     <div className="sidebyside alt">
                         <div className="sub-div-text">
                             <p>
@@ -245,7 +245,16 @@ function StottOss() {
                             </p>
                             <br />
                             <br />
-                            <p>Din hjelp setter spor</p>
+                            <div className="support">
+                                <p>Din hjelp setter spor </p>
+                                <span>
+                                    <Link to={"/blifrivillig"}>
+                                        Bli frivillig
+                                    </Link>{" "}
+                                    | <a href="#support">Støtt oss</a> |{" "}
+                                    <a href="#member">Bli medlem</a>
+                                </span>
+                            </div>
                         </div>
                         <div className="img-main">
                             <img
@@ -253,6 +262,9 @@ function StottOss() {
                                 alt="Ugle i et tre"
                             />
                         </div>
+                    </div>
+                    <div className="fuglespor-placer">
+                        <div className="fuglesporstottoss"></div>
                     </div>
                 </div>
             </div>
@@ -262,7 +274,7 @@ function StottOss() {
                     Takk for at du ønsker å blir medlem. <br />
                     Vi vil svare deg så fort vi har mulighet.
                 </p>
-                <a href="/">Tilbake til hovedside</a>
+                <Link to={"/"}>Tilbake til hovedside</Link>
             </Modal>
         </>
     );

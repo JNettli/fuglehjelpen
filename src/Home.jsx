@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function Home() {
     return (
         <>
@@ -18,9 +20,9 @@ function Home() {
                                     hver fugl vi får reddet. Bli med å gjøre en
                                     forskjell!
                                 </p>
-                                <a href="/stottoss">
+                                <Link to="/stottoss">
                                     <button>Bli fuglehjelpgiver i dag!</button>
-                                </a>
+                                </Link>
                             </div>
                         </div>
                     </div>
@@ -40,9 +42,7 @@ function Home() {
             </div>
             <div className="white-div">
                 <div className="main-div-box">
-                    <div className="imgplaceholder">
-                        <img src="/fuglehjelp.svg" alt="Fuglehjelpen logo" />
-                    </div>
+                    <div className="logo-img"></div>
                     <div className="main-div-textbox">
                         <h1>
                             <div>HVEM ER FUGLEHJELPEN?</div>
@@ -69,9 +69,9 @@ function Home() {
                             landets eldste hjelpeorganisasjoner for fugl.
                         </p>
                         <div className="right-side">
-                            <a href="/omoss">
+                            <Link to={"/omoss"}>
                                 <button>Les mer om oss</button>
-                            </a>
+                            </Link>
                         </div>
                     </div>
                 </div>
@@ -100,9 +100,9 @@ function Home() {
                             Noen ganger kan vi ikke ta telefonen. Da er det
                             greit å vite hva du selv kan gjøre.
                         </p>
-                        <a href="/fuglinod">
+                        <Link to={"/fuglinod"}>
                             <button>Les mer her</button>
-                        </a>
+                        </Link>
                     </div>
                 </div>
             </div>
@@ -120,9 +120,9 @@ function Home() {
                             utmattet at en "dårlig vår" kan ta knekken på den.
                             Da vil et fuglebrett med frø være redningen.
                         </p>
-                        <a href="/fugleforing">
+                        <Link to={"/fugleforing"}>
                             <button>Les mer her</button>
-                        </a>
+                        </Link>
                     </div>
                     <div className="img-main">
                         <img src="/home/hjem01.jpg" alt="Fugl på matstasjon" />
@@ -223,9 +223,9 @@ function Home() {
                             rehabilitering, til kjørehjelp, til mer
                             administrative oppgaver m. m.
                         </p>
-                        <a href="/blifrivillig">
+                        <Link to={"/blifrivillig"}>
                             <button>Les mer her</button>
-                        </a>
+                        </Link>
                     </div>
                     <div className="img-main">
                         <img src="/home/hjem05.jpg" alt="Andunge i hånd" />
@@ -279,9 +279,9 @@ function Home() {
                             <span className="stott-inline">
                                 Eller gi et fast beløp som{" "}
                             </span>
-                            <a href="/stottoss" id="support-member">
+                            <Link to={"/stottoss"} id="support-member">
                                 medlem
-                            </a>
+                            </Link>
                             <br />
                             <br />
                         </p>
@@ -292,7 +292,7 @@ function Home() {
                 </div>
             </div>
             <div className="white-div">
-                <div className="main-div-box">
+                <div className="main-div-box filler">
                     <div className="other-orgs">
                         <h1>
                             <div>ANDRE HJELPEORGANISASJONER</div>
@@ -329,7 +329,7 @@ function Home() {
                             </li>
                             <li>
                                 <span>Byfuglhjelpen</span> Trondheim:{" "}
-                                <a href="tel:+4746468600">46468600</a>
+                                <a href="tel:+4748200884">48200884</a>
                             </li>
                         </ul>
                     </div>

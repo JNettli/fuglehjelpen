@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function FugleForing() {
     return (
         <>
@@ -6,7 +8,7 @@ function FugleForing() {
                     <div className="hero-circle circle-movement">
                         <div className="hero-inner-circle">
                             <div className="hero-text alt-movement">
-                                <p className="hero-h1">FÔRING</p>
+                                <p className="hero-h1 alt-hero">FÔRING</p>
                                 <p className="hero-p alt-text">
                                     Fuglehjelpen anbefaler fôring av fugler hele
                                     året rundt. Det gjør fuglene sterkere og
@@ -55,7 +57,7 @@ function FugleForing() {
                             </p>
                         </div>
                     </div>
-                    <div className="sidebyside alt med-spacer">
+                    <div className="sidebyside alt">
                         <div className="sub-div-text">
                             <p>
                                 I sommerperioden skal unger mates, og en fylt
@@ -136,7 +138,7 @@ function FugleForing() {
                             </p>
                         </div>
                     </div>
-                    <div className="spacer">
+                    <div>
                         <div className="sidebyside alt">
                             <div className="sub-div-text">
                                 <p>
@@ -245,319 +247,321 @@ function FugleForing() {
                     <div className="centered">
                         <h1>FÔRINGSTABELL</h1>
 
-                        <a href="/foringstabell" className="feeding-link">
+                        <Link to={"/foringstabell"} className="feeding-link">
                             Klikk her for foringstabell
-                        </a>
+                        </Link>
 
                         <table>
-                            <tr>
-                                <td>Art</td>
-                                <td>
-                                    Forekomst <br />
-                                    på fôrplass
-                                </td>
-                                <td>Frøblanding</td>
-                                <td>Korn</td>
-                                <td>Solsikkefrø</td>
-                                <td>Nøtter</td>
-                                <td>Frukt</td>
-                                <td>Meisebolle</td>
-                                <td>Bemerkninger</td>
-                            </tr>
-                            <tr>
-                                <td>Nøtteskrike</td>
-                                <td>Alminnelig</td>
-                                <td>X</td>
-                                <td>X</td>
-                                <td>X</td>
-                                <td>X</td>
-                                <td>X</td>
-                                <td>X</td>
-                                <td>Hamstrer</td>
-                            </tr>
-                            <tr>
-                                <td>Stær</td>
-                                <td>
-                                    Ganske <br />
-                                    sjelden
-                                </td>
-                                <td>X</td>
-                                <td>X</td>
-                                <td>X</td>
-                                <td>X</td>
-                                <td>X</td>
-                                <td>X</td>
-                                <td>Overvintrer i Sør-Norge</td>
-                            </tr>
-                            <tr>
-                                <td>Gråspurv</td>
-                                <td>Meget alminnelig</td>
-                                <td>X</td>
-                                <td>X</td>
-                                <td>X</td>
-                                <td></td>
-                                <td></td>
-                                <td>X</td>
-                                <td>Mest i tettbebyggelse</td>
-                            </tr>
-                            <tr>
-                                <td>Pilfink</td>
-                                <td>Meget alminnelig</td>
-                                <td>X</td>
-                                <td>X</td>
-                                <td>X</td>
-                                <td></td>
-                                <td></td>
-                                <td>X</td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td>Dompapp</td>
-                                <td>Alminnelig</td>
-                                <td></td>
-                                <td>X</td>
-                                <td>X</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td>Gråsisik</td>
-                                <td>
-                                    Ganske <br />
-                                    sjelden
-                                </td>
-                                <td>X</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td>X</td>
-                                <td>Enkelte overvintrer</td>
-                            </tr>
-                            <tr>
-                                <td>Stilits</td>
-                                <td>Sjelden</td>
-                                <td>X</td>
-                                <td>X</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td>X</td>
-                                <td>Overvintrer i Sør-Norge</td>
-                            </tr>
-                            <tr>
-                                <td>Grønnsisik</td>
-                                <td>
-                                    Ganske <br />
-                                    sjelden
-                                </td>
-                                <td>X</td>
-                                <td></td>
-                                <td></td>
-                                <td>X</td>
-                                <td></td>
-                                <td>X</td>
-                                <td>Drar i oktober/ november</td>
-                            </tr>
-                            <tr>
-                                <td>Grønnfink</td>
-                                <td>
-                                    Ganske <br />
-                                    sjelden
-                                </td>
-                                <td>X</td>
-                                <td>X</td>
-                                <td>X</td>
-                                <td>X</td>
-                                <td></td>
-                                <td>X</td>
-                                <td>Mange overvintrer</td>
-                            </tr>
-                            <tr>
-                                <td>Bokfink</td>
-                                <td>Alminnelig om våren</td>
-                                <td>X</td>
-                                <td>X</td>
-                                <td>X</td>
-                                <td></td>
-                                <td></td>
-                                <td>X</td>
-                                <td>Noen overvintrer</td>
-                            </tr>
-                            <tr>
-                                <td>Gulspurv</td>
-                                <td>Alminnelig</td>
-                                <td>X</td>
-                                <td>X</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td>Spettmeis</td>
-                                <td>Alminnelig i Sør-Norge</td>
-                                <td>X</td>
-                                <td></td>
-                                <td>X</td>
-                                <td>X</td>
-                                <td></td>
-                                <td>X</td>
-                                <td>Hamstrer</td>
-                            </tr>
-                            <tr>
-                                <td>Kjøttmeis</td>
-                                <td>Meget alminnelig</td>
-                                <td>X</td>
-                                <td></td>
-                                <td>X</td>
-                                <td>X</td>
-                                <td>X</td>
-                                <td>X</td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td>Blåmeis</td>
-                                <td>Meget alminnelig</td>
-                                <td>X</td>
-                                <td></td>
-                                <td>X</td>
-                                <td>X</td>
-                                <td>X</td>
-                                <td>X</td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td>Toppmeis</td>
-                                <td>Ganske alminnelig</td>
-                                <td>X</td>
-                                <td></td>
-                                <td>X</td>
-                                <td>X</td>
-                                <td></td>
-                                <td>X</td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td>Svartmeis</td>
-                                <td>
-                                    Ganske <br />
-                                    sjelden
-                                </td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td>X</td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td>Løvmeis</td>
-                                <td>Ganske alminnelig</td>
-                                <td>X</td>
-                                <td></td>
-                                <td>X</td>
-                                <td></td>
-                                <td></td>
-                                <td>X</td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td>Granmeis</td>
-                                <td>Alminnelig</td>
-                                <td>X</td>
-                                <td></td>
-                                <td>X</td>
-                                <td></td>
-                                <td></td>
-                                <td>X</td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td>Svarttrost</td>
-                                <td>Ganske alminnelig</td>
-                                <td>X</td>
-                                <td></td>
-                                <td>X</td>
-                                <td></td>
-                                <td></td>
-                                <td>X</td>
-                                <td>Overvintrer i Sør-Norge</td>
-                            </tr>
-                            <tr>
-                                <td>Rødstrupe</td>
-                                <td>
-                                    Ganske <br />
-                                    sjelden
-                                </td>
-                                <td>X</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td>X</td>
-                                <td>Overvintrer i Sør-Norge</td>
-                            </tr>
-                            <tr>
-                                <td>Sidesvans</td>
-                                <td>
-                                    Ganske <br />
-                                    sjelden
-                                </td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td>X</td>
-                                <td></td>
-                                <td>Invasjonsfugl, liker rognebær</td>
-                            </tr>
-                            <tr>
-                                <td>Dvergspett</td>
-                                <td>
-                                    Ganske <br />
-                                    sjelden
-                                </td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td>X</td>
-                                <td></td>
-                                <td>X</td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td>Flaggspett</td>
-                                <td>
-                                    Ganske <br />
-                                    sjelden
-                                </td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td>X</td>
-                                <td></td>
-                                <td>X</td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td>Grønnspett</td>
-                                <td>
-                                    Ganske <br />
-                                    sjelden
-                                </td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td>X</td>
-                                <td></td>
-                                <td>X</td>
-                                <td></td>
-                            </tr>
+                            <tbody>
+                                <tr>
+                                    <td>Art</td>
+                                    <td>
+                                        Forekomst <br />
+                                        på fôrplass
+                                    </td>
+                                    <td>Frøblanding</td>
+                                    <td>Korn</td>
+                                    <td>Solsikkefrø</td>
+                                    <td>Nøtter</td>
+                                    <td>Frukt</td>
+                                    <td>Meisebolle</td>
+                                    <td>Bemerkninger</td>
+                                </tr>
+                                <tr>
+                                    <td>Nøtteskrike</td>
+                                    <td>Alminnelig</td>
+                                    <td>X</td>
+                                    <td>X</td>
+                                    <td>X</td>
+                                    <td>X</td>
+                                    <td>X</td>
+                                    <td>X</td>
+                                    <td>Hamstrer</td>
+                                </tr>
+                                <tr>
+                                    <td>Stær</td>
+                                    <td>
+                                        Ganske <br />
+                                        sjelden
+                                    </td>
+                                    <td>X</td>
+                                    <td>X</td>
+                                    <td>X</td>
+                                    <td>X</td>
+                                    <td>X</td>
+                                    <td>X</td>
+                                    <td>Overvintrer i Sør-Norge</td>
+                                </tr>
+                                <tr>
+                                    <td>Gråspurv</td>
+                                    <td>Meget alminnelig</td>
+                                    <td>X</td>
+                                    <td>X</td>
+                                    <td>X</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>X</td>
+                                    <td>Mest i tettbebyggelse</td>
+                                </tr>
+                                <tr>
+                                    <td>Pilfink</td>
+                                    <td>Meget alminnelig</td>
+                                    <td>X</td>
+                                    <td>X</td>
+                                    <td>X</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>X</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Dompapp</td>
+                                    <td>Alminnelig</td>
+                                    <td></td>
+                                    <td>X</td>
+                                    <td>X</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Gråsisik</td>
+                                    <td>
+                                        Ganske <br />
+                                        sjelden
+                                    </td>
+                                    <td>X</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>X</td>
+                                    <td>Enkelte overvintrer</td>
+                                </tr>
+                                <tr>
+                                    <td>Stilits</td>
+                                    <td>Sjelden</td>
+                                    <td>X</td>
+                                    <td>X</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>X</td>
+                                    <td>Overvintrer i Sør-Norge</td>
+                                </tr>
+                                <tr>
+                                    <td>Grønnsisik</td>
+                                    <td>
+                                        Ganske <br />
+                                        sjelden
+                                    </td>
+                                    <td>X</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>X</td>
+                                    <td></td>
+                                    <td>X</td>
+                                    <td>Drar i oktober/ november</td>
+                                </tr>
+                                <tr>
+                                    <td>Grønnfink</td>
+                                    <td>
+                                        Ganske <br />
+                                        sjelden
+                                    </td>
+                                    <td>X</td>
+                                    <td>X</td>
+                                    <td>X</td>
+                                    <td>X</td>
+                                    <td></td>
+                                    <td>X</td>
+                                    <td>Mange overvintrer</td>
+                                </tr>
+                                <tr>
+                                    <td>Bokfink</td>
+                                    <td>Alminnelig om våren</td>
+                                    <td>X</td>
+                                    <td>X</td>
+                                    <td>X</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>X</td>
+                                    <td>Noen overvintrer</td>
+                                </tr>
+                                <tr>
+                                    <td>Gulspurv</td>
+                                    <td>Alminnelig</td>
+                                    <td>X</td>
+                                    <td>X</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Spettmeis</td>
+                                    <td>Alminnelig i Sør-Norge</td>
+                                    <td>X</td>
+                                    <td></td>
+                                    <td>X</td>
+                                    <td>X</td>
+                                    <td></td>
+                                    <td>X</td>
+                                    <td>Hamstrer</td>
+                                </tr>
+                                <tr>
+                                    <td>Kjøttmeis</td>
+                                    <td>Meget alminnelig</td>
+                                    <td>X</td>
+                                    <td></td>
+                                    <td>X</td>
+                                    <td>X</td>
+                                    <td>X</td>
+                                    <td>X</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Blåmeis</td>
+                                    <td>Meget alminnelig</td>
+                                    <td>X</td>
+                                    <td></td>
+                                    <td>X</td>
+                                    <td>X</td>
+                                    <td>X</td>
+                                    <td>X</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Toppmeis</td>
+                                    <td>Ganske alminnelig</td>
+                                    <td>X</td>
+                                    <td></td>
+                                    <td>X</td>
+                                    <td>X</td>
+                                    <td></td>
+                                    <td>X</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Svartmeis</td>
+                                    <td>
+                                        Ganske <br />
+                                        sjelden
+                                    </td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>X</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Løvmeis</td>
+                                    <td>Ganske alminnelig</td>
+                                    <td>X</td>
+                                    <td></td>
+                                    <td>X</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>X</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Granmeis</td>
+                                    <td>Alminnelig</td>
+                                    <td>X</td>
+                                    <td></td>
+                                    <td>X</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>X</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Svarttrost</td>
+                                    <td>Ganske alminnelig</td>
+                                    <td>X</td>
+                                    <td></td>
+                                    <td>X</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>X</td>
+                                    <td>Overvintrer i Sør-Norge</td>
+                                </tr>
+                                <tr>
+                                    <td>Rødstrupe</td>
+                                    <td>
+                                        Ganske <br />
+                                        sjelden
+                                    </td>
+                                    <td>X</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>X</td>
+                                    <td>Overvintrer i Sør-Norge</td>
+                                </tr>
+                                <tr>
+                                    <td>Sidesvans</td>
+                                    <td>
+                                        Ganske <br />
+                                        sjelden
+                                    </td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>X</td>
+                                    <td></td>
+                                    <td>Invasjonsfugl, liker rognebær</td>
+                                </tr>
+                                <tr>
+                                    <td>Dvergspett</td>
+                                    <td>
+                                        Ganske <br />
+                                        sjelden
+                                    </td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>X</td>
+                                    <td></td>
+                                    <td>X</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Flaggspett</td>
+                                    <td>
+                                        Ganske <br />
+                                        sjelden
+                                    </td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>X</td>
+                                    <td></td>
+                                    <td>X</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Grønnspett</td>
+                                    <td>
+                                        Ganske <br />
+                                        sjelden
+                                    </td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>X</td>
+                                    <td></td>
+                                    <td>X</td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
                         </table>
                     </div>
                 </div>

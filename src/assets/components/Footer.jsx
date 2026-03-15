@@ -37,8 +37,20 @@ function Footer() {
                 </div>
                 <div>
                     <div className="credits">
-                        <p>
+                        <p className="desktop-visible">
                             &copy; 2025 Fuglehjelpen | Design av{" "}
+                            <a
+                                href="https://vilderognlien.netlify.app/"
+                                target="_blank"
+                            >
+                                Vilde Rognlien
+                            </a>
+                        </p>
+                        <p className="mobile-visible">
+                            &copy; 2025 Fuglehjelpen |
+                        </p>
+                        <p className="mobile-visible">
+                            Design av{" "}
                             <a
                                 href="https://vilderognlien.netlify.app/"
                                 target="_blank"

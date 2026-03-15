@@ -20,7 +20,7 @@ function OmOss() {
                     <div className="hero-circle circle-movement">
                         <div className="hero-inner-circle">
                             <div className="hero-text alt-movement">
-                                <p className="hero-h1">OM OSS</p>
+                                <p className="hero-h1 alt-hero">OM OSS</p>
                                 <p className="hero-p alt-text">
                                     Vår idylliske rehabiliteringsgård holder til
                                     i Moss. Her har vi 7 store
@@ -52,12 +52,7 @@ function OmOss() {
             <div className="white-div">
                 <div className="sub-div-box">
                     <div className="sidebyside">
-                        <div className="imgplaceholder">
-                            <img
-                                src="/fuglehjelp.svg"
-                                alt="Fuglehjelpen logo"
-                            />
-                        </div>
+                        <div className="logo-img"></div>
                         <div className="sub-div-text">
                             <h1>HVEM ER FUGLEHJELPEN?</h1>
                             <p>
@@ -119,7 +114,7 @@ function OmOss() {
                             />
                         </div>
                     </div>
-                    <div className="spacer">
+                    <div>
                         <div className="sidebyside">
                             <div className="img-main">
                                 <img
@@ -231,7 +226,7 @@ function OmOss() {
                             </p>
                         </div>
                     </div>
-                    <div className="spacer">
+                    <div>
                         <div className="sidebyside alt">
                             <div className="sub-div-text">
                                 <p>

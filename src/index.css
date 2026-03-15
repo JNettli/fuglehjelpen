@@ -89,6 +89,22 @@ nav p {
     height: 317px;
 }
 
+.fuglespor-placer {
+    position: relative;
+    margin-bottom: 64px;
+}
+
+.fuglesporstottoss {
+    background-image: url("/fuglespor_stottoss.svg");
+    width: 1000px;
+    height: 353px;
+    background-repeat: no-repeat;
+    position: absolute;
+    z-index: 1;
+    bottom: -100px;
+    left: 230px;
+}
+
 .fuglespor-mobil {
     display: none;
     height: 225px;
@@ -117,6 +133,14 @@ nav p {
     margin-left: -10px;
 }
 
+.mobile-nav-phone {
+    display: none;
+}
+
+.nav-phone-desktop {
+    display: flex;
+}
+
 .nav-phone-numbers a {
     font-family: AvenirNext;
     color: var(--primary-white);
@@ -130,11 +154,6 @@ nav p {
 
 .nav-link {
     text-decoration: none;
-}
-
-.nav-link p:hover {
-    cursor: pointer;
-    color: var(--button);
 }
 
 .logo {
@@ -258,10 +277,6 @@ h1 {
     line-height: 130%;
 }
 
-.hero-p a:hover {
-    color: var(--button);
-}
-
 .alt-text,
 .alt-text a {
     font-size: 30px;
@@ -290,18 +305,18 @@ button {
     border-radius: 0 48px 0 48px;
 }
 
-button:hover {
-    background-color: var(--primary-white);
-    color: var(--button);
-}
-
 .centered {
     text-align: center;
     align-self: center;
 }
 
+.filler {
+    width: 100%;
+}
+
 .other-orgs {
-    max-width: 1320px;
+    width: 100%;
+    padding: 0;
 }
 
 .other-orgs h1 span {
@@ -326,14 +341,14 @@ button:hover {
 .main-div-box {
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    max-width: 1440px;
-    gap: 16px;
-    margin: 160px 0;
+    justify-content: space-between;
+    max-width: 1320px;
+    gap: 64px;
+    margin: 160px 60px;
 }
 
 .main-div-textbox {
-    max-width: 52%;
+    max-width: 54%;
 }
 
 .main-div-textbox h1 span {
@@ -343,15 +358,13 @@ button:hover {
 .right-side {
     display: flex;
     justify-content: flex-end;
-    margin-right: 80px;
 }
 
 .right-side button {
     background-color: var(--primary-green);
-}
-.right-side button:hover {
-    background-color: var(--button);
-    color: var(--primary-white);
+    padding: 14px 32px;
+    margin-top: 24px;
+    border-radius: 0 32px 0 32px;
 }
 
 .main-div-box button {
@@ -359,16 +372,6 @@ button:hover {
     padding: 14px 40px;
     margin-top: 32px;
     border-radius: 0 32px 0 32px;
-}
-
-.main-div-box button:hover {
-    background-color: var(--button);
-    color: var(--primary-white);
-}
-
-.white-div-textbox button:hover {
-    background-color: var(--button);
-    color: var(--primary-white);
 }
 
 .greentext {
@@ -407,10 +410,6 @@ button:hover {
     transition: 0.3s;
 }
 
-.offwhite-div a:hover {
-    color: var(--button);
-}
-
 .rehab-fugler {
     display: flex;
     gap: 32px;
@@ -426,10 +425,6 @@ button:hover {
     cursor: pointer;
     transition: 0.3s;
     text-decoration: none;
-}
-
-.rehab-fugler-box:hover {
-    scale: 1.05;
 }
 
 .rehab-fugler-img {
@@ -472,10 +467,6 @@ button:hover {
     transition: 0.3s;
 }
 
-#support-member:hover {
-    color: var(--primary-green);
-}
-
 #stott-bold {
     font-family: AvenirNextBold;
     color: var(--primary-font);
@@ -491,10 +482,6 @@ li a {
     color: var(--primary-font);
     text-decoration: none;
     transition: 0.3s;
-}
-
-li a:hover {
-    color: var(--button);
 }
 
 .quicknavbox {
@@ -543,6 +530,7 @@ li a:hover {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    gap: 64px;
 }
 
 .sub-div-text {
@@ -555,6 +543,20 @@ li a:hover {
 
 .med-spacer {
     padding: 40px 0;
+}
+
+.foringstabell {
+    max-width: 100%;
+    margin-bottom: 80px;
+}
+
+.desktop-visible {
+    display: block;
+    letter-spacing: 0.5px;
+}
+
+.mobile-visible {
+    display: none;
 }
 
 table {
@@ -649,8 +651,9 @@ tr:last-child td:last-child {
 }
 
 .underline {
-    border: 1px solid var(--primary-green);
-    width: 60%;
+    border: 2px solid var(--primary-green);
+    width: 50%;
+    margin-top: -12px;
 }
 
 .form-div {
@@ -658,13 +661,15 @@ tr:last-child td:last-child {
     font-family: AvenirNext;
     font-size: 20px;
     margin: 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
 }
 
 .form-div-inner {
     display: flex;
     justify-content: space-between;
     gap: 16px;
-    padding: 8px 0 16px 0;
 }
 
 .form-div-inner div {
@@ -690,8 +695,17 @@ input {
     width: 50%;
 }
 
+.form-adress {
+    margin-bottom: 24px;
+}
+
+.form-age {
+    max-width: 84px;
+}
+
 label {
     display: block;
+    margin-top: 24px;
 }
 
 .form-radio {
@@ -701,6 +715,7 @@ label {
     padding: 8px;
     cursor: pointer;
     position: relative;
+    margin-top: 0;
 }
 
 .form-radio input {
@@ -716,10 +731,6 @@ label {
     transition: 0.3s;
 }
 
-.form-radio:hover .checkmark {
-    background-color: var(--button);
-}
-
 .form-radio input:checked ~ .checkmark {
     background-color: var(--primary-green);
 }
@@ -732,6 +743,27 @@ label {
 
 .form-radio input:checked ~ .checkmark::after {
     display: block;
+}
+
+.support {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 3;
+}
+
+.support span {
+    display: flex;
+    gap: 24px;
+    font-size: 24px;
+    font-family: AvenirNext;
+}
+
+.support span a {
+    text-decoration: none;
+    color: var(--button);
+    transition: 0.3s;
+    z-index: 4;
 }
 
 .checkmark::after {
@@ -765,7 +797,7 @@ textarea {
 .memberinput {
     background-color: var(--background-white);
     margin: 8px 0 24px 0;
-    max-width: 75%;
+    box-sizing: border-box;
 }
 
 .modal-overlay {
@@ -819,10 +851,6 @@ textarea {
     transition: 0.3s;
 }
 
-.modal a:hover {
-    background-color: var(--button);
-}
-
 .modal-close {
     background-color: var(--primary-white);
     position: absolute;
@@ -833,11 +861,6 @@ textarea {
     font-size: 32px;
     cursor: pointer;
     color: var(--primary-green);
-}
-
-.modal-close:hover {
-    background-color: var(--background-white);
-    color: var(--button);
 }
 
 .feeding-table {
@@ -895,17 +918,12 @@ footer a {
 
 .facelogo {
     display: flex;
-    width: 64px;
     gap: 8px;
 }
 
 .facelogo img {
     width: 22px;
     height: 22px;
-}
-
-footer a:hover {
-    color: var(--button);
 }
 
 .footer-numbers .credits {
@@ -917,7 +935,7 @@ footer a:hover {
     border-top: 1px solid #f5f1d780;
     margin-left: 60px;
     margin-right: 60px;
-    padding: 32px 48px;
+    padding: 32px 16px;
 }
 
 .credits p,
@@ -932,16 +950,22 @@ footer a:hover {
     background-color: var(--primary-white);
 }
 
-.imgplaceholder {
-    height: 482px;
+.logo-img {
+    height: 436px;
     width: 482px;
+    background-image: url("/fuglehjelp.svg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    flex-shrink: 0;
 }
 
 .img-main {
-    width: 455px;
-    height: fit-content;
     border-radius: 24px;
-    contain: content;
+}
+
+.img-main img {
+    width: 100%;
 }
 
 .member-box {
@@ -974,6 +998,15 @@ footer a:hover {
     top: -160px;
 }
 
+.member-logo-mobil {
+    display: none;
+    background-image: url("/fuglehjelpmedlemmobil.svg");
+    background-repeat: no-repeat;
+    width: 375px;
+    height: 375px;
+    margin: 64px 0 0 0;
+}
+
 .menu-overlay {
     position: fixed;
     inset: 0;
@@ -996,10 +1029,6 @@ footer a:hover {
 
 .navbar button {
     align-self: center;
-}
-
-.navbar button:hover {
-    background-color: transparent;
 }
 
 .burger {
@@ -1151,10 +1180,6 @@ footer a:hover {
     display: none;
 }
 
-.feeding-link:hover {
-    color: var(--primary-green);
-}
-
 @media (max-width: 1330px) {
     table {
         display: none;
@@ -1173,25 +1198,38 @@ footer a:hover {
     .feeding-table tr td {
         font-size: 14px;
     }
+
+    .support {
+        flex-direction: column;
+        align-items: baseline;
+        gap: 16px;
+    }
+
+    .fuglespor-placer {
+        display: none;
+    }
 }
 
 @media (max-width: 1280px) {
     .rehab-fugler-box {
         width: 320px;
     }
-}
 
-@media (max-width: 1060px) {
     .burger {
         display: flex;
     }
 
-    .nav {
-        z-index: 100;
+    .mobile-nav-phone {
+        display: flex;
+        gap: 24px;
     }
 
-    .navbar {
-        padding: 0 20px;
+    .nav-phone-desktop {
+        display: none;
+    }
+
+    .nav {
+        z-index: 100;
     }
 
     .nav-right {
@@ -1220,9 +1258,16 @@ footer a:hover {
     .nav-right.active {
         transform: translateX(0);
     }
+}
+
+@media (max-width: 1060px) {
+    .navbar {
+        padding: 0 20px;
+    }
 
     .main-div-box {
         flex-direction: column-reverse;
+        padding: 0 20px;
     }
 
     .sub-div-box {
@@ -1235,7 +1280,7 @@ footer a:hover {
 
     .sidebyside {
         flex-direction: column-reverse;
-        gap: 32px;
+        gap: 64px;
     }
 
     .right-side {
@@ -1261,10 +1306,12 @@ footer a:hover {
     }
 
     .member-logo {
-        flex: auto;
-        top: 0;
-        width: 400px;
-        height: 500px;
+        display: none;
+    }
+
+    .member-logo-mobil {
+        background-size: contain;
+        display: block;
     }
 
     .other-orgs {
@@ -1307,14 +1354,12 @@ footer a:hover {
     .footer-div-top {
         flex-direction: column;
         gap: 48px;
-    }
-
-    .footer-div-top img {
-        width: 280px;
+        padding: 64px 20px 80px 20px;
     }
 
     .credits {
         padding: 32px 0;
+        margin: 16px 20px;
     }
 
     .quicknav {
@@ -1359,7 +1404,7 @@ footer a:hover {
     }
 
     .main-div-textbox {
-        max-width: 80%;
+        max-width: 100%;
     }
 
     .imgplaceholder {
@@ -1372,10 +1417,8 @@ footer a:hover {
         height: 260px;
     }
 
-    .img-main {
-        max-width: 100%;
-        object-fit: contain;
-        margin: 0 20px;
+    .logo-img {
+        width: 100%;
     }
 
     .rehab-fugler-box {
@@ -1384,10 +1427,6 @@ footer a:hover {
 
     .bigger-text {
         font-size: 20px;
-    }
-
-    .centered {
-        padding: 0 24px;
     }
 
     nav {
@@ -1465,12 +1504,12 @@ footer a:hover {
     }
 
     .hero-p a {
-        font-size: 14px;
+        font-size: 17px;
     }
 
     .hero-text {
-        right: 79px;
-        top: 67px;
+        right: 75px;
+        top: 62px;
     }
 
     .alt-movement {
@@ -1479,9 +1518,12 @@ footer a:hover {
         width: 280px;
     }
 
-    .alt-movement .hero-p,
-    .alt-movement .alt-text a {
-        font-size: 16px;
+    .alt-hero {
+        font-size: 36px;
+    }
+
+    .alt-text {
+        font-size: 17px;
     }
 
     .hero-text button {
@@ -1498,10 +1540,95 @@ footer a:hover {
     .image-stack {
         height: 420px;
     }
+
+    .desktop-visible {
+        display: none;
+    }
+
+    .mobile-visible {
+        display: block;
+        letter-spacing: 0.5px;
+    }
 }
 
 @media (min-width: 430px) {
     .burger-text {
         display: block;
+    }
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .nav-link p:hover {
+        cursor: pointer;
+        color: var(--button);
+    }
+
+    .hero-p a:hover {
+        color: var(--button);
+    }
+
+    button:hover {
+        background-color: var(--primary-white);
+        color: var(--button);
+    }
+
+    .right-side button:hover {
+        background-color: var(--button);
+        color: var(--primary-white);
+    }
+
+    .main-div-box button:hover {
+        background-color: var(--button);
+        color: var(--primary-white);
+    }
+
+    .white-div-textbox button:hover {
+        background-color: var(--button);
+        color: var(--primary-white);
+    }
+
+    .offwhite-div a:hover {
+        color: var(--button);
+    }
+
+    .rehab-fugler-box:hover {
+        scale: 1.05;
+    }
+
+    #support-member:hover {
+        color: var(--primary-green);
+    }
+
+    li a:hover {
+        color: var(--button);
+    }
+
+    .form-radio:hover .checkmark {
+        background-color: var(--button);
+    }
+
+    .modal a:hover {
+        background-color: var(--button);
+    }
+
+    .modal-close:hover {
+        background-color: var(--background-white);
+        color: var(--button);
+    }
+
+    footer a:hover {
+        color: var(--button);
+    }
+
+    .burger:hover {
+        background-color: transparent;
+    }
+
+    .feeding-link:hover {
+        color: var(--primary-green);
+    }
+
+    .support span a:hover {
+        color: var(--primary-green);
     }
 }

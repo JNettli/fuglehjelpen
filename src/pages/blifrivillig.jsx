@@ -40,7 +40,7 @@ function BliFrivillig() {
                     <div className="hero-circle circle-movement">
                         <div className="hero-inner-circle">
                             <div className="hero-text alt-movement">
-                                <p className="hero-h1">FRIVILLIG</p>
+                                <p className="hero-h1 alt-hero">FRIVILLIG</p>
                                 <p className="hero-p alt-text">
                                     Ønsker du å bli en Fuglehjelper? Alt arbeid
                                     hos Fuglehjelpen gjøres av frivillige, og
@@ -91,13 +91,16 @@ function BliFrivillig() {
                         <p>Fyll ut skjemaet så godt og utfyllende du kan.</p>
 
                         <form ref={form} onSubmit={handleSubmit}>
+                            <p className="p-demi">Kontaktskjema</p>
                             <input
                                 type="text"
                                 name="company"
                                 style={{ display: "none" }}
                             />
 
-                            <label htmlFor="fname">Navn</label>
+                            <label htmlFor="fname">
+                                Navn<span className="orangetext">*</span>
+                            </label>
                             <div className="form-div-inner">
                                 <input
                                     type="text"
@@ -115,8 +118,10 @@ function BliFrivillig() {
                                 />
                             </div>
 
-                            <label htmlFor="adresse">Adresse</label>
-                            <div className="form-div-inner">
+                            <label htmlFor="adresse">
+                                Adresse<span className="orangetext">*</span>
+                            </label>
+                            <div className="form-div-inner form-adress">
                                 <input
                                     type="text"
                                     name="adresse"
@@ -144,8 +149,12 @@ function BliFrivillig() {
                             </div>
 
                             <div className="form-div-inner-alt">
-                                <label htmlFor="nummer">Mobil</label>
-                                <label htmlFor="email">E-post</label>
+                                <label htmlFor="nummer">
+                                    Mobil<span className="orangetext">*</span>
+                                </label>
+                                <label htmlFor="email">
+                                    E-post<span className="orangetext">*</span>
+                                </label>
                             </div>
 
                             <div className="form-div-inner">
@@ -165,8 +174,10 @@ function BliFrivillig() {
                                 />
                             </div>
 
-                            <label htmlFor="age">Alder</label>
-                            <div className="form-div-inner">
+                            <label htmlFor="age">
+                                Alder<span className="orangetext">*</span>
+                            </label>
+                            <div className="form-div-inner form-age">
                                 <input
                                     type="number"
                                     name="age"
@@ -176,7 +187,10 @@ function BliFrivillig() {
                                 />
                             </div>
 
-                            <label>Har du noe erfaring med fugl?</label>
+                            <label>
+                                Har du noe erfaring med fugl?
+                                <span className="orangetext">*</span>
+                            </label>
 
                             <label className="form-radio">
                                 <input
@@ -214,6 +228,7 @@ function BliFrivillig() {
                             <label htmlFor="hjelpe-med">
                                 Fortell litt om deg selv og hva du kunne tenke
                                 deg å hjelpe med
+                                <span className="orangetext">*</span>
                             </label>
 
                             <textarea
@@ -224,7 +239,9 @@ function BliFrivillig() {
                                 required
                             ></textarea>
 
-                            <label>Har du bil?</label>
+                            <label>
+                                Har du bil?<span className="orangetext">*</span>
+                            </label>
 
                             <label className="form-radio">
                                 <input type="radio" name="bil" value="Ja" />
@@ -240,7 +257,10 @@ function BliFrivillig() {
 
                             <br />
 
-                            <label>Hvor ofte kan og vil du hjelpe til?</label>
+                            <label>
+                                Hvor ofte kan og vil du hjelpe til?
+                                <span className="orangetext">*</span>
+                            </label>
 
                             <label className="form-radio">
                                 <input
@@ -287,6 +307,7 @@ function BliFrivillig() {
                             <label htmlFor="grunnlag">
                                 Hvorfor ønsker du å være frivillig i
                                 fuglehjelpen?
+                                <span className="orangetext">*</span>
                             </label>
 
                             <textarea

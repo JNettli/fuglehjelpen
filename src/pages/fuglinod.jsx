@@ -61,7 +61,7 @@ function FuglINod() {
                     <div className="hero-circle circle-movement">
                         <div className="hero-inner-circle">
                             <div className="hero-text alt-movement">
-                                <p className="hero-h1">FUGL I NØD</p>
+                                <p className="hero-h1 alt-hero">FUGL I NØD</p>
                                 <p className="hero-p alt-text">
                                     Har du funnet en fugl i nød og er usikker på
                                     hva du gjør nå? Ring oss på{" "}
@@ -513,7 +513,6 @@ function FuglINod() {
                             />
                         </div>
                     </div>
-                    <div className="med-spacer"></div>
                     <div className="sidebyside">
                         <div className="img-main">
                             <img
@@ -558,7 +557,6 @@ function FuglINod() {
                             </ol>
                         </div>
                     </div>
-                    <div className="med-spacer"></div>
                     <div className="sidebyside alt">
                         <div className="sub-div-text">
                             <ol className="helplist" start={5}>
@@ -636,7 +634,6 @@ function FuglINod() {
                             />
                         </div>
                     </div>
-                    <div className="med-spacer"></div>
                     <div className="sidebyside">
                         <div className="img-main">
                             <img
@@ -681,7 +678,6 @@ function FuglINod() {
                             </ol>
                         </div>
                     </div>
-                    <div className="med-spacer"></div>
                     <div className="sidebyside alt">
                         <div className="sub-div-text">
                             <ol className="helplist" start={8}>
