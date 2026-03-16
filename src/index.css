@@ -115,10 +115,10 @@ nav p {
 .fuglespor-mobil {
     display: none;
     height: 315px;
-    width: 315px;
+    width: 264px;
     position: relative;
     top: -18px;
-    left: -110px;
+    left: -88px;
 }
 
 .navbar {
@@ -1516,6 +1516,8 @@ footer a {
     .fuglespor-box {
         left: 240px;
         top: 604px;
+        height: 204px;
+        width: 155px;
     }
 
     .main-div-textbox h1 div {
