@@ -330,6 +330,10 @@ button {
     padding: 0;
 }
 
+.other-orgs ul li {
+    margin-top: 55px;
+}
+
 .other-orgs h1 span {
     display: none;
 }
