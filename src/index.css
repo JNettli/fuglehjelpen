@@ -140,7 +140,7 @@ nav p {
     display: flex;
     flex-direction: column;
     gap: 8px;
-    margin-left: -10px;
+    margin-left: -6px;
 }
 
 .mobile-nav-phone {
@@ -156,7 +156,7 @@ nav p {
     color: var(--primary-white);
     text-decoration: none;
     cursor: pointer;
-    scale: 1.11;
+    scale: 1.13;
 }
 
 .nav-phone p {
@@ -1609,6 +1609,10 @@ footer a {
     .helplist li {
         font-size: 20px;
     }
+
+    .nav-phone-numbers {
+        scale: 0.9;
+    }
 }
 
 @media (max-width: 500px) {
@@ -1622,6 +1626,10 @@ footer a {
 
     .hero-img-stottoss {
         background-position: -550px;
+    }
+
+    .nav-phone-numbers {
+        margin-left: -12px;
     }
 }
 
