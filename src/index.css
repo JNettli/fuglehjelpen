@@ -51,6 +51,14 @@ body {
     flex: 1;
 }
 
+.bg-cream {
+    background-color: var(--primary-white);
+}
+
+.bg-white {
+    background-color: var(--background-white);
+}
+
 nav {
     position: fixed;
     display: flex;
@@ -103,8 +111,11 @@ nav p {
 
 .fuglespor-mobil {
     display: none;
-    height: 225px;
-    width: 151px;
+    height: 315px;
+    width: 315px;
+    position: relative;
+    top: -18px;
+    left: -110px;
 }
 
 .navbar {
@@ -142,6 +153,7 @@ nav p {
     color: var(--primary-white);
     text-decoration: none;
     cursor: pointer;
+    scale: 1.11;
 }
 
 .nav-phone p {
@@ -175,12 +187,12 @@ h1 {
     font-weight: bold;
     font-size: 47px;
     color: var(--primary-green);
-    margin-top: 0;
+    margin: 0 0 16px 0;
 }
 
 .hero-banner-main {
     max-width: 1440px;
-    margin: 124px auto 0 auto;
+    margin: 123px auto 0 auto;
     height: 828px;
     background-size: cover;
     background-position: center;
@@ -378,6 +390,10 @@ button {
     color: var(--button);
 }
 
+.orangetext li {
+    margin: 48px 0;
+}
+
 .p-demi-orange {
     color: var(--button);
     font-family: AvenirNextDemiBold;
@@ -468,7 +484,6 @@ button {
 }
 
 li {
-    margin: 64px 0;
     font-family: AvenirNext;
     font-size: 24px;
 }
@@ -603,12 +618,20 @@ tr:last-child td:last-child {
 
 .helplist {
     list-style-type: decimal;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    margin: 0;
+}
+
+.ikkesvar {
+    margin-bottom: 32px;
 }
 
 .helplist li {
-    margin: 32px 0;
     color: var(--primary-green);
     font-family: AvenirNextDemiBold;
+    font-size: 24px;
 }
 
 .helplist li p {
@@ -665,6 +688,7 @@ tr:last-child td:last-child {
     display: flex;
     justify-content: space-between;
     gap: 16px;
+    margin-top: 10px;
 }
 
 .form-div-inner div {
@@ -782,6 +806,7 @@ textarea {
     background-color: var(--primary-white);
     border-radius: 8px;
     resize: none;
+    margin-top: 10px;
 }
 
 .memberlabel {
@@ -791,7 +816,7 @@ textarea {
 
 .memberinput {
     background-color: var(--background-white);
-    margin: 8px 0 24px 0;
+    margin: 10px 0 24px 0;
     box-sizing: border-box;
 }
 
@@ -976,7 +1001,7 @@ footer a {
     flex: 0.5;
     display: flex;
     align-items: center;
-    padding-right: 20px;
+    padding-right: 80px;
 }
 
 .member-text {
@@ -985,13 +1010,13 @@ footer a {
 
 .member-logo {
     flex: 1;
-    height: 1100px;
+    height: 1000px;
     background-image: url("/fuglehjelpmedlem.svg");
     background-size: contain;
     background-position: left;
     background-repeat: no-repeat;
     position: relative;
-    top: -160px;
+    top: -80px;
 }
 
 .member-logo-mobil {
@@ -1042,7 +1067,7 @@ footer a {
     font-family: AvenirNext;
     font-size: 15px;
     letter-spacing: 1px;
-    display: none;
+    display: block;
 }
 
 .burger-icon {
@@ -1106,7 +1131,8 @@ footer a {
     align-items: center;
     gap: 20px;
     transition: 0.5s;
-    margin-top: 48px;
+    margin-top: 50px;
+    margin-bottom: -25px;
 }
 
 .image-rotator {
@@ -1419,7 +1445,7 @@ footer a {
     }
 
     .logo-img {
-        width: 100%;
+        width: 90%;
     }
 
     .rehab-fugler-box {
@@ -1448,7 +1474,7 @@ footer a {
 
     .hero-banner-main {
         height: 700px;
-        margin-top: 80px;
+        margin-top: 79px;
     }
 
     .hero-img-mover {
@@ -1516,7 +1542,7 @@ footer a {
 
     .alt-movement {
         right: 114px;
-        top: 100px;
+        top: 88px;
         width: 280px;
     }
 
@@ -1524,8 +1550,9 @@ footer a {
         font-size: 36px;
     }
 
-    .alt-text {
-        font-size: 17px;
+    .alt-text,
+    .alt-text a {
+        font-size: 19px;
     }
 
     .hero-text button {
@@ -1555,11 +1582,39 @@ footer a {
     .support span {
         gap: 8px;
     }
+
+    .sub-div-box {
+        gap: 32px;
+    }
+
+    .sidebyside {
+        gap: 32px;
+    }
+
+    .burger-text {
+        display: none;
+    }
+
+    .hero-img-omoss {
+        background-position: -300px;
+    }
+
+    .helplist li {
+        font-size: 20px;
+    }
 }
 
-@media (min-width: 430px) {
-    .burger-text {
-        display: block;
+@media (max-width: 500px) {
+    .hero-img-fuglinod {
+        background-position: -570px;
+    }
+
+    .hero-img-fugleforing {
+        background-position: -730px;
+    }
+
+    .hero-img-stottoss {
+        background-position: -550px;
     }
 }
 
