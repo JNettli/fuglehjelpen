@@ -119,7 +119,6 @@ function StottOss() {
                             <br />
                             <p>Velkommen som medlem i Fuglehjelpen!</p>
                             <br />
-                            <br />
 
                             <form ref={form} onSubmit={handleSubmit}>
                                 <input
