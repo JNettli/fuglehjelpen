@@ -31,16 +31,8 @@ function Home() {
                         </div>
                     </div>
                     <div className="fuglespor-box">
-                        <img
-                            src="/spor.svg"
-                            alt="fuglespor"
-                            className="fuglespor"
-                        />
-                        <img
-                            src="/fuglespor_mobil.svg"
-                            alt="fuglespor-mobil"
-                            className="fuglespor-mobil"
-                        />
+                        <div className="fuglespor"></div>
+                        <div className="fuglespor-mobil"></div>
                     </div>
                 </div>
                 <div className="white-div">

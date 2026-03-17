@@ -53,10 +53,12 @@ body {
 
 .bg-cream {
     background-color: var(--primary-white);
+    overflow-x: hidden;
 }
 
 .bg-white {
     background-color: var(--background-white);
+    overflow-x: hidden;
 }
 
 nav {
@@ -94,6 +96,9 @@ nav p {
     position: relative;
     top: -11px;
     left: 3px;
+    background-image: url("/spor.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 .fuglespor-placer {
@@ -114,11 +119,14 @@ nav p {
 
 .fuglespor-mobil {
     display: none;
-    height: 315px;
-    width: 264px;
+    height: 100%;
+    width: 100%;
     position: relative;
-    top: -18px;
-    left: -88px;
+    background-image: url("/fuglespor_mobil.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    left: 16px;
+    top: -6px;
 }
 
 .navbar {
@@ -1347,6 +1355,7 @@ footer a {
 
     .member-div-box {
         margin-bottom: 64px;
+        padding-right: 0;
     }
 
     .member-logo {
@@ -1356,6 +1365,7 @@ footer a {
     .member-logo-mobil {
         background-size: contain;
         display: block;
+        width: 100%;
     }
 
     .other-orgs {
@@ -1517,7 +1527,8 @@ footer a {
         left: 240px;
         top: 604px;
         height: 204px;
-        width: 155px;
+        width: 100%;
+        overflow: hidden;
     }
 
     .main-div-textbox h1 div {
